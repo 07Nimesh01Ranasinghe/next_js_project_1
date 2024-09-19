@@ -569,8 +569,8 @@
 
 "use client";
 import { cn } from "@/lib/utils";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import React, { useMemo, useRef } from "react";
+import {useFrame, useThree } from "@react-three/fiber";
+import React, { useMemo, useRef, useCallback } from "react";
 import * as THREE from "three";
 
 export const CanvasRevealEffect = ({
@@ -620,6 +620,30 @@ interface DotMatrixProps {
   center?: ("x" | "y")[];
 }
 
+// Refine the Uniforms type
+type Uniforms = {
+  u_colors: {
+    value: THREE.Vector3[];
+    type: string;
+  };
+  u_opacities: {
+    value: number[];
+    type: string;
+  };
+  u_total_size: {
+    value: number;
+    type: string;
+  };
+  u_dot_size: {
+    value: number;
+    type: string;
+  };
+  [key: string]: {
+    value: number | number[] | THREE.Vector2 | THREE.Vector3 | THREE.Vector3[];
+    type: string;
+  };
+};
+
 const DotMatrix: React.FC<DotMatrixProps> = ({
   colors = [[0, 0, 0]],
   opacities = [0.04, 0.04, 0.04, 0.04, 0.04, 0.08, 0.08, 0.08, 0.08, 0.14],
@@ -628,42 +652,36 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
   shader = "",
   center = ["x", "y"],
 }) => {
-  const uniforms: Uniforms = useMemo(() => {
-    let colorsArray = [
-      colors[0],
-      colors[0],
-      colors[0],
-      colors[0],
-      colors[0],
-      colors[0],
-    ];
+  const { size } = useThree();
+
+  const uniforms = useMemo<Uniforms>(() => {
+    let colorsArray: THREE.Vector3[] = colors.map(
+      (color) => new THREE.Vector3(color[0] / 255, color[1] / 255, color[2] / 255)
+    );
+
     if (colors.length === 2) {
       colorsArray = [
-        colors[0],
-        colors[0],
-        colors[0],
-        colors[1],
-        colors[1],
-        colors[1],
+        colorsArray[0],
+        colorsArray[0],
+        colorsArray[0],
+        colorsArray[1],
+        colorsArray[1],
+        colorsArray[1],
       ];
     } else if (colors.length === 3) {
       colorsArray = [
-        colors[0],
-        colors[0],
-        colors[1],
-        colors[1],
-        colors[2],
-        colors[2],
+        colorsArray[0],
+        colorsArray[0],
+        colorsArray[1],
+        colorsArray[1],
+        colorsArray[2],
+        colorsArray[2],
       ];
     }
 
     return {
       u_colors: {
-        value: colorsArray.map((color) => [
-          color[0] / 255,
-          color[1] / 255,
-          color[2] / 255,
-        ]),
+        value: colorsArray,
         type: "uniform3fv",
       },
       u_opacities: {
@@ -680,6 +698,23 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
       },
     };
   }, [colors, opacities, totalSize, dotSize]);
+
+  const getUniforms = useCallback((): Uniforms => {
+    const preparedUniforms: Uniforms = {
+      u_colors: uniforms.u_colors,
+      u_opacities: uniforms.u_opacities,
+      u_total_size: uniforms.u_total_size,
+      u_dot_size: uniforms.u_dot_size,
+    };
+
+    preparedUniforms["u_time"] = { value: 0, type: "uniform1f" };
+    preparedUniforms["u_resolution"] = {
+      value: new THREE.Vector2(size.width * 2, size.height * 2),
+      type: "uniform2f",
+    };
+
+    return preparedUniforms;
+  }, [size, uniforms]);
 
   return (
     <Shader
@@ -732,17 +767,10 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
             fragColor = vec4(color, opacity);
             fragColor.rgb *= fragColor.a;
         }`}
-      uniforms={uniforms}
+      uniforms={getUniforms()}
       maxFps={60}
     />
   );
-};
-
-type Uniforms = {
-  [key: string]: {
-    value: number[] | number[][] | number;
-    type: string;
-  };
 };
 
 const ShaderMaterial = ({
@@ -772,54 +800,11 @@ const ShaderMaterial = ({
     timeLocation.value = timestamp;
   });
 
-  const getUniforms = (): Record<string, THREE.IUniform> => {
-    const preparedUniforms: Record<string, THREE.IUniform> = {};
-  
-    for (const uniformName in uniforms) {
-      const uniform = uniforms[uniformName];
-  
-      switch (uniform.type) {
-        case "uniform1f":
-          preparedUniforms[uniformName] = { value: uniform.value as number }; // Remove 'type'
-          break;
-        case "uniform3f":
-          preparedUniforms[uniformName] = {
-            value: new THREE.Vector3().fromArray(uniform.value as number[]),
-          }; // Remove 'type'
-          break;
-        case "uniform1fv":
-          preparedUniforms[uniformName] = { value: uniform.value as number[] }; // Remove 'type'
-          break;
-        case "uniform3fv":
-          preparedUniforms[uniformName] = {
-            value: (uniform.value as number[][]).map((v: number[]) =>
-              new THREE.Vector3().fromArray(v)
-            ),
-          }; // Remove 'type'
-          break;
-        case "uniform2f":
-          preparedUniforms[uniformName] = {
-            value: new THREE.Vector2().fromArray(uniform.value as number[]),
-          }; // Remove 'type'
-          break;
-        default:
-          console.error(`Invalid uniform type for '${uniformName}'.`);
-          break;
-      }
-    }
-  
-    preparedUniforms["u_time"] = { value: 0 };
-    preparedUniforms["u_resolution"] = {
-      value: new THREE.Vector2(size.width * 2, size.height * 2),
-    };
-    return preparedUniforms;
-  };
-
   const material = useMemo(() => {
     const materialObject = new THREE.ShaderMaterial({
       vertexShader: `...`, // Your vertex shader code here
       fragmentShader: source,
-      uniforms: getUniforms(),
+      uniforms,
       glslVersion: THREE.GLSL3,
       blending: THREE.CustomBlending,
       blendSrc: THREE.SrcAlphaFactor,
@@ -827,7 +812,7 @@ const ShaderMaterial = ({
     });
 
     return materialObject;
-  }, [size, uniforms, source]);
+  }, [source, uniforms]);
 
   return (
     <mesh ref={ref}>
@@ -838,14 +823,3 @@ const ShaderMaterial = ({
 };
 
 const Shader = React.memo(ShaderMaterial);
-
-
-
-
-
-
-
-
-
-
-
