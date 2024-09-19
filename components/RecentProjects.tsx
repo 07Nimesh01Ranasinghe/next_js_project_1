@@ -1,6 +1,7 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
+import Image from "next/image";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
 
@@ -9,7 +10,7 @@ const RecentProjects = () => {
     <div
       id="projects"
       className="py-20 relative"
-      style={{ zIndex: 1 }} // Set a lower z-index value
+      style={{ zIndex: 1 }}
     >
       <h1 className="heading">
         A small selection of <span className="text-purple">recent projects</span>
@@ -20,17 +21,19 @@ const RecentProjects = () => {
             className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
             key={item.id}
           >
-            <PinContainer title="Visit" href="https://twitter.com/mannupaaji">
+            <PinContainer title="Visit" href={item.link || "https://twitter.com/mannupaaji"}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                 <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
+                  className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D]"
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image src="/bg.png" alt="Background" layout="fill" objectFit="cover" />
                 </div>
-                <img
+                <Image
                   src={item.img}
-                  alt="cover"
+                  alt={item.title}
+                  layout="intrinsic"
+                  width={500}
+                  height={300}
                   className="z-10 absolute bottom-0"
                 />
               </div>
@@ -39,13 +42,7 @@ const RecentProjects = () => {
                 {item.title}
               </h1>
 
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
-              >
+              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 text-[#BEC1DD] my-1">
                 {item.des}
               </p>
 
@@ -59,7 +56,7 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <Image src={icon} alt={`icon-${index}`} width={20} height={20} />
                     </div>
                   ))}
                 </div>
@@ -80,3 +77,4 @@ const RecentProjects = () => {
 };
 
 export default RecentProjects;
+

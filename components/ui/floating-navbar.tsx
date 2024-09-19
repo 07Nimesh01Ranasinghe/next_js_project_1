@@ -348,13 +348,8 @@
 
 
 "use client";
-import React, { useState, useEffect, useRef } from "react";
-import {
-  motion,
-  AnimatePresence,
-  useScroll,
-  useMotionValueEvent,
-} from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
@@ -371,35 +366,10 @@ export const FloatingNav = ({
 }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(true); // Show nav on load
-  const heroRef = useRef<HTMLElement | null>(null);
-
-  useEffect(() => {
-    const heroSection = heroRef.current;
-    if (!heroSection) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true); // Show when hero section is in view
-        } else {
-          setVisible(false); // Hide when hero section is out of view
-        }
-      },
-      {
-        threshold: 1.0, // Trigger when the full hero section is in view
-      }
-    );
-
-    observer.observe(heroSection);
-
-    return () => {
-      if (heroSection) observer.unobserve(heroSection);
-    };
-  }, []);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
-      let direction = current - scrollYProgress.getPrevious()!;
+      const direction = current - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
         setVisible(true); // Show when near the top
@@ -453,4 +423,5 @@ export const FloatingNav = ({
     </AnimatePresence>
   );
 };
+
 

@@ -388,30 +388,29 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-import { teamDetails } from "@/data/index"; // Importing teamDetails from your data folder
+import { teamDetails } from "@/data/index";
 
 interface ExpandableCardProps {
-  idsToShow?: number[]; // Optional prop to filter members by IDs
+  idsToShow?: number[];
 }
 
 export function ExpandableCard({ idsToShow }: ExpandableCardProps) {
-  // Filter team members by IDs if idsToShow is provided
   const members = idsToShow
     ? teamDetails.filter((member) => idsToShow.includes(member.id))
     : teamDetails;
 
-  const [active, setActive] = useState<(typeof teamDetails)[number] | boolean | null>(null);
+  const [active, setActive] = useState<(typeof teamDetails)[number] | null>(null);
   const id = useId();
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        setActive(false);
+        setActive(null);
       }
     }
 
-    if (active && typeof active === "object") {
+    if (active) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
@@ -426,7 +425,7 @@ export function ExpandableCard({ idsToShow }: ExpandableCardProps) {
   return (
     <>
       <AnimatePresence>
-        {active && typeof active === "object" && (
+        {active && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -436,17 +435,14 @@ export function ExpandableCard({ idsToShow }: ExpandableCardProps) {
         )}
       </AnimatePresence>
       <AnimatePresence>
-        {active && typeof active === "object" ? (
+        {active && (
           <div className="fixed inset-0 grid place-items-center z-[100]">
             <motion.button
               key={`button-${active.name}-${id}`}
               layout
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              exit={{
-                opacity: 0,
-                transition: { duration: 0.05 },
-              }}
+              exit={{ opacity: 0, transition: { duration: 0.05 } }}
               className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
               onClick={() => setActive(null)}
             >
@@ -499,7 +495,7 @@ export function ExpandableCard({ idsToShow }: ExpandableCardProps) {
               </div>
             </motion.div>
           </div>
-        ) : null}
+        )}
       </AnimatePresence>
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-2 w-full max-w-6xl">
         {members.map((member) => (
@@ -564,3 +560,5 @@ export const CloseIcon = () => {
     </motion.svg>
   );
 };
+
+
