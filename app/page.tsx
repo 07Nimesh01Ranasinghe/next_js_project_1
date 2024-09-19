@@ -163,8 +163,8 @@ export default function Home() {
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
-      let direction = current - scrollYProgress.getPrevious()!;
-
+      const direction = current - scrollYProgress.getPrevious()!;
+  
       if (scrollYProgress.get() < 0.05) {
         setLogoVisible(true);
       } else {
@@ -176,6 +176,7 @@ export default function Home() {
       }
     }
   });
+  
 
   return (
     <main className="relative dark:bg-black-100 bg-white flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
