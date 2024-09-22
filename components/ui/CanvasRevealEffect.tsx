@@ -569,7 +569,7 @@
 
 "use client";
 import { cn } from "@/lib/utils";
-import {useFrame, useThree } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef, useCallback } from "react";
 import * as THREE from "three";
 
@@ -590,20 +590,15 @@ export const CanvasRevealEffect = ({
 }) => {
   return (
     <div className={cn("h-full relative bg-white w-full", containerClassName)}>
-      <div className="h-full w-full">
+      <Canvas className="h-full w-full">
         <DotMatrix
-          colors={colors ?? [[0, 255, 255]]}
-          dotSize={dotSize ?? 3}
-          opacities={opacities ?? [0.3, 0.3, 0.3, 0.5, 0.5, 0.5, 0.8, 0.8, 0.8, 1]}
-          shader={`
-            float animation_speed_factor = ${animationSpeed.toFixed(1)};
-            float intro_offset = distance(u_resolution / 2.0 / u_total_size, st2) * 0.01 + (random(st2) * 0.15);
-            opacity *= step(intro_offset, u_time * animation_speed_factor);
-            opacity *= clamp((1.0 - step(intro_offset + 0.1, u_time * animation_speed_factor)) * 1.25, 1.0, 1.25);
-          `}
-          center={["x", "y"]}
+          colors={colors}
+          dotSize={dotSize}
+          opacities={opacities}
+          animationSpeed={animationSpeed}
+          showGradient={showGradient}
         />
-      </div>
+      </Canvas>
       {showGradient && (
         <div className="absolute inset-0 bg-gradient-to-t from-gray-950 to-[84%]" />
       )}
@@ -618,9 +613,10 @@ interface DotMatrixProps {
   dotSize?: number;
   shader?: string;
   center?: ("x" | "y")[];
+  animationSpeed?: number;
+  showGradient?: boolean;
 }
 
-// Refine the Uniforms type
 type Uniforms = {
   u_colors: {
     value: THREE.Vector3[];
@@ -651,6 +647,8 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
   dotSize = 2,
   shader = "",
   center = ["x", "y"],
+  // animationSpeed,
+  // showGradient,
 }) => {
   const { size } = useThree();
 
@@ -718,10 +716,8 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
 
   return (
     <Shader
-      source={`
-        precision mediump float;
+      source={`precision mediump float;
         in vec2 fragCoord;
-
         uniform float u_time;
         uniform float u_opacities[10];
         uniform vec3 u_colors[6];
@@ -750,20 +746,15 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
             }
             float opacity = step(0.0, st.x);
             opacity *= step(0.0, st.y);
-
             vec2 st2 = vec2(int(st.x / u_total_size), int(st.y / u_total_size));
-
             float frequency = 5.0;
             float show_offset = random(st2);
             float rand = random(st2 * floor((u_time / frequency) + show_offset + frequency) + 1.0);
             opacity *= u_opacities[int(rand * 10.0)];
             opacity *= 1.0 - step(u_dot_size / u_total_size, fract(st.x / u_total_size));
             opacity *= 1.0 - step(u_dot_size / u_total_size, fract(st.y / u_total_size));
-
             vec3 color = u_colors[int(show_offset * 6.0)];
-
             ${shader}
-
             fragColor = vec4(color, opacity);
             fragColor.rgb *= fragColor.a;
         }`}
@@ -783,7 +774,7 @@ const ShaderMaterial = ({
   uniforms: Uniforms;
 }) => {
   const { size } = useThree();
-  const ref = useRef<THREE.Mesh>(null); // Change this to initialize with null
+  const ref = useRef<THREE.Mesh>(null); 
 
   let lastFrameTime = 0;
 
@@ -802,7 +793,7 @@ const ShaderMaterial = ({
 
   const material = useMemo(() => {
     const materialObject = new THREE.ShaderMaterial({
-      vertexShader: `...`, // Your vertex shader code here
+      vertexShader: `...`, 
       fragmentShader: source,
       uniforms,
       glslVersion: THREE.GLSL3,
