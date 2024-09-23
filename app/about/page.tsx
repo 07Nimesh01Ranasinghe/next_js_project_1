@@ -161,7 +161,7 @@ export default function AboutPage() {
         </AnimatePresence>
 
         {/* About Section */}
-        <section className="relative z-10 w-full flex-grow pt-32" ref={heroRef}>
+        <section className="relative z-10 w-full flex-grow pt-40" ref={heroRef}>
           {/* <About /> */}
           <WobbleCardDemo/>
         </section>
