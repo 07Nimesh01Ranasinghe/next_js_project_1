@@ -107,6 +107,30 @@ export const navItems = [
     },
   ];
 
+  
+  // data/index.ts
+  export const cards = [
+    {
+      id: 1,
+      image: "/DSC_9366.jpg", // Replace with actual image path
+    },
+    {
+      id: 2,
+      image: "/DSC_9447 copy.jpg", // Replace with actual image path
+    },
+    {
+      id: 3,
+      image: "/DSC_9641 copy.jpg", // Replace with actual image path
+    },
+    {
+      id: 4,
+      image: "/DSC_9495 copy.jpg", // Replace with actual image path
+    },
+  ];
+
+
+
+
   export const people = [
     {
       id: 1,
