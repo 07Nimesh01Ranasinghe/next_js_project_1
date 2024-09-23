@@ -90,11 +90,12 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import About from "@/components/About";
+// import About from "@/components/About";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Footer from "@/components/Footer";
 import { navItems } from "@/data";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
+import { WobbleCardDemo } from "@/components/WobbleCardDemo";
 
 export default function AboutPage() {
   const { scrollYProgress } = useScroll();
@@ -160,8 +161,9 @@ export default function AboutPage() {
         </AnimatePresence>
 
         {/* About Section */}
-        <section className="relative z-10 w-full flex-grow" ref={heroRef}>
-          <About />
+        <section className="relative z-10 w-full flex-grow pt-32" ref={heroRef}>
+          {/* <About /> */}
+          <WobbleCardDemo/>
         </section>
 
         {/* Footer */}
@@ -170,5 +172,7 @@ export default function AboutPage() {
     </main>
   );
 }
+
+
 
 

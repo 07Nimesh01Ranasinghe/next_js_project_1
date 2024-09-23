@@ -110,7 +110,7 @@ export default function About() {
 
           {/* Right Section (Who We Are) */}
           <div className="w-full md:w-1/2 pl-6">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 text-purple">
               Who Are We?
             </h1>
             <p className="max-w-3xl text-lg md:text-xl leading-relaxed mb-8 text-black-100">
@@ -131,7 +131,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row w-full mt-10">
           {/* Vision */}
           <div className="w-full md:w-1/2 pr-6 mb-10 md:mb-0">
-            <h3 className="text-3xl font-semibold mb-4">Vision</h3>
+            <h3 className="text-3xl font-semibold mb-4 text-purple">Vision</h3>
             <p className="text-lg leading-relaxed text-black-100">
               Un-detachable partner in total solutions.
             </p>
@@ -139,7 +139,7 @@ export default function About() {
 
           {/* Values */}
           <div className="w-full md:w-1/2 pl-6">
-            <h3 className="text-3xl font-semibold mb-4">Values</h3>
+            <h3 className="text-3xl font-semibold mb-4 text-purple">Values</h3>
             <p className="text-lg leading-relaxed">
               We add value to the industry as the business partner through diversified business
               solutions derived from state of the art technology blended with our well.
