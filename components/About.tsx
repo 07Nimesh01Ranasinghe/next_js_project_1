@@ -111,7 +111,7 @@ export default function About() {
           {/* Right Section (Who We Are) */}
           <div className="w-full md:w-1/2 pl-6">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
-              [Who Are We?]
+              Who Are We?
             </h1>
             <p className="max-w-3xl text-lg md:text-xl leading-relaxed mb-8 text-black-100">
               Dockyard Total Solutions (Pvt) Ltd (DTS) is a fully owned subsidiary of Colombo
