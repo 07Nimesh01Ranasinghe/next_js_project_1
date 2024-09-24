@@ -92,7 +92,7 @@ export const navItems = [
     {
       id: 3,
       title: "DOCCAFE",
-      des: "You want a eligant web application? for your business.",
+      des: "You want a eligant web application? for your business. Contact with us and enhance your business...",
       img: "/DocCafeBreak.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
       link: "https://github.com/adrianhajdin/ai_saas_app",

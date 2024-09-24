@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import About from "@/components/About";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Footer from "@/components/Footer";
 import { navItems } from "@/data";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
+import Contact from "@/components/Contact";
 
 
 export default function AboutPage() {
@@ -73,7 +73,7 @@ export default function AboutPage() {
 
         {/* About Section */}
         <section className="relative z-10 w-full flex-grow pt-40" ref={heroRef}>
-          <About /> 
+          <Contact/>
         </section>
 
         {/* Footer */}

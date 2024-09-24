@@ -24,7 +24,7 @@ export function WobbleCardDemo() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full bg-transparent">
       <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2 h-full bg-p-200 min-h-[500px] lg:min-h-[300px]"
+        containerClassName="col-span-1 lg:col-span-2 h-full bg-purple min-h-[500px] lg:min-h-[300px]"
         className=""
       >
         <div className="max-w-xs">
@@ -46,7 +46,7 @@ export function WobbleCardDemo() {
           className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
         /> */}
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 bg-p-400 min-h-[300px]">
+      <WobbleCard containerClassName="col-span-1 bg-p-200 min-h-[300px]">
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Vision
         </h2>
@@ -54,7 +54,7 @@ export function WobbleCardDemo() {
             Un-detachable partner in total solutions.
         </p>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-p-500 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-p-400 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="flex flex-col md:flex-row items-center justify-between w-full">
             <div className="max-w-sm">
             <h2 className="max-w-sm md:max-w-lg text-left text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
