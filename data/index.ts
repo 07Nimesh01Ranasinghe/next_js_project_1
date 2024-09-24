@@ -461,3 +461,30 @@ export const navItems = [
       img: "/icons8-facebook.svg",
     },
   ];
+
+  export const contactDetails = [
+    {
+      id: 1,
+      title: "Call Us",
+      desc: "+94 77 800 5569/ +94 112 520 388",
+      className: "md:col-span-2",
+      thumbnail: "/telephone-call-hand-hover-pinch.json",
+      
+    },
+    {
+      id: 2,
+      title: "Mail Us",
+      desc: "info@dockyardsolutions.lk",
+      className: "md:col-span-2",
+      thumbnail: "/mail.json",
+      
+    },
+    {
+      id: 3,
+      title: "Meet Us",
+      desc: "223 Jayantha Mallimarachchi Mawatha, Colombo 01400",
+      className: "md:col-span-2",
+      thumbnail: "/location.json",
+      
+    },
+  ];
