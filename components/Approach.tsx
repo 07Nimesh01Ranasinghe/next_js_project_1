@@ -69,7 +69,7 @@ const Card: React.FC<CardProps> = ({ title, icon, children, des }) => {
       style={{
         // background: "rgb(4,7,29)",
         // backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-        background: "#CE93D8",
+        background: "#CBACF9",
       }}
     >
       <Icon className="absolute h-10 w-10 -top-3 -left-3 dark:text-white text-black opacity-30" />

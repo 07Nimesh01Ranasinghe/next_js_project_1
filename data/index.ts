@@ -466,7 +466,7 @@ export const navItems = [
     {
       id: 1,
       title: "Call Us",
-      desc: "+94 77 800 5569/ +94 112 520 388",
+      desc: "+94 77 697 0808",
       className: "md:col-span-2",
       thumbnail: "/telephone-call-hand-hover-pinch.json",
       
