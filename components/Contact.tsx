@@ -126,59 +126,53 @@
 
 "use client";
 import Image from "next/image";
-import { contactDetails } from "@/data/index"; // Adjust the import path as needed
-import { Button } from "./ui/MovingBorders";
-import { Player } from '@lottiefiles/react-lottie-player';
+import { contactDetails } from "@/data/index";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 export default function Contact() {
   return (
     <div className="container mx-auto px-4 py-10">
       {/* Top Section */}
-      <div className="flex flex-col md:flex-row items-center justify-between mb-10">
+      <div className="flex flex-col md:flex-row items-start justify-between mb-10">
         {/* Left Side: Contact Us */}
         <div className="w-full md:w-2/5">
           <h2 className="text-4xl mb-4 text-purple">Contact Us</h2>
-          <p className="text-sm text-gray-600 mb-6">
+          <p className="text-sm text-gray-600 mb-9">
             Any questions? We would be happy to help you!
           </p>
           <div className="space-y-6">
             {contactDetails.map((detail) => (
-              <Button
-                key={detail.id}
-                containerClassName="w-full"
-                borderClassName="bg-gradient-to-r from-purple-500 to-indigo-500"
-                className="h-24"
-              >
-                <div className="flex items-start space-x-4 justify-start">
-                  {detail.thumbnail.endsWith(".json") ? (
-                    <Player
-                      autoplay
-                      loop
-                      src={detail.thumbnail}
-                      style={{ height: '50px', width: '50px' }}
-                      
-                    />
-                  ) : (
-                    <Image
-                      src={detail.thumbnail} // Display static image if not a Lottie
-                      alt={detail.title}
-                      width={24}
-                      height={24}
-                      className="text-black"
-                    />
-                  )}
-                  <div className="text-left">
-                    <p className="text-lg text-black">{detail.title}</p>
-                    <p className="text-sm text-black">{detail.desc}</p>
-                  </div>
+              <div key={detail.id} className="flex items-start space-x-4">
+                {detail.thumbnail.endsWith(".json") ? (
+                  <Player
+                    autoplay
+                    loop
+                    src={detail.thumbnail}
+                    style={{ height: "50px", width: "50px" }}
+                    className="flex-shrink-0"
+                  />
+                ) : (
+                  <Image
+                    src={detail.thumbnail}
+                    alt={detail.title}
+                    width={50}
+                    height={50}
+                    className="flex-shrink-0"
+                  />
+                )}
+                <div className="text-left">
+                  <p className="text-lg text-black font-semibold">
+                    {detail.title}
+                  </p>
+                  <p className="text-sm text-black">{detail.desc}</p>
                 </div>
-              </Button>
+              </div>
             ))}
           </div>
         </div>
 
         {/* Right Side: Google Map */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 mt-6 md:mt-0">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d265.1960703045407!2d79.87142508850246!3d6.958921792155459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25914b1a56beb%3A0xb232f5ded53fa34a!2sDockyard%20Total%20Solutions!5e0!3m2!1sen!2slk!4v1727151522949!5m2!1sen!2slk"
             width="100%"
@@ -205,45 +199,55 @@ export default function Contact() {
         </div>
         {/* Right Side: Form */}
         <div className="w-full md:w-1/2">
-          <form className="space-y-4">
+          <form className="space-y-4 text-black-200">
             <div className="flex space-x-4">
               <div className="w-1/2">
-                <label className="block text-sm font-medium text-gray-700">First Name</label>
+                <label className="block lg:text-base font-medium sm:text-sm">
+                  First Name
+                </label>
                 <input
                   type="text"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="mt-1 p-1 bg-p_glassy block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                   placeholder="Your first name"
                 />
               </div>
               <div className="w-1/2">
-                <label className="block text-sm font-medium text-gray-700">Last Name</label>
+                <label className="block lg:text-base font-medium  sm:text-sm">
+                  Last Name
+                </label>
                 <input
                   type="text"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="mt-1 p-1 bg-p_glassy block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                   placeholder="Your last name"
                 />
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Email</label>
+              <label className="block lg:text-base font-medium  sm:text-sm">
+                Email
+              </label>
               <input
                 type="email"
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                className="mt-1 p-1 bg-p_glassy block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 placeholder="youremail@email.com"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Phone Number</label>
+              <label className="block lg:text-base font-medium  sm:text-sm">
+                Phone Number
+              </label>
               <input
                 type="text"
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                className="mt-1 p-1 bg-p_glassy block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 placeholder="+9876543210"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Message</label>
+              <label className="block lg:text-base font-medium  sm:text-sm">
+                Message
+              </label>
               <textarea
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                className="mt-1 p-1 bg-p_glassy block w-full rounded-md border-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 placeholder="Type your message here..."
                 rows={4}
               ></textarea>
@@ -260,6 +264,7 @@ export default function Contact() {
     </div>
   );
 }
+
 
 
 // "use client";
