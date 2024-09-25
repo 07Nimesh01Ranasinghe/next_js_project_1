@@ -137,7 +137,7 @@ export default function Contact() {
       <div className="flex flex-col md:flex-row items-center justify-between mb-10">
         {/* Left Side: Contact Us */}
         <div className="w-full md:w-2/5">
-          <h2 className="text-4xl mb-4 text-purple-700">Contact Us</h2>
+          <h2 className="text-4xl mb-4 text-purple">Contact Us</h2>
           <p className="text-sm text-gray-600 mb-6">
             Any questions? We would be happy to help you!
           </p>
@@ -149,14 +149,14 @@ export default function Contact() {
                 borderClassName="bg-gradient-to-r from-purple-500 to-indigo-500"
                 className="h-24"
               >
-                <div className="flex items-center space-x-4">
+                <div className="flex items-start space-x-4 justify-start">
                   {detail.thumbnail.endsWith(".json") ? (
                     <Player
                       autoplay
                       loop
                       src={detail.thumbnail}
                       style={{ height: '50px', width: '50px' }}
-                      className="justify-start"
+                      
                     />
                   ) : (
                     <Image
@@ -167,7 +167,7 @@ export default function Contact() {
                       className="text-black"
                     />
                   )}
-                  <div>
+                  <div className="text-left">
                     <p className="text-lg text-black">{detail.title}</p>
                     <p className="text-sm text-black">{detail.desc}</p>
                   </div>
@@ -250,7 +250,7 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+              className="w-full bg-purple text-white py-2 rounded-md hover:bg-p-500 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             >
               Send Message
             </button>
