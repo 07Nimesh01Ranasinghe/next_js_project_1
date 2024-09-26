@@ -131,55 +131,107 @@ export const navItems = [
 
 
 
+  // export const people = [
+  //   {
+  //     id: 1,
+  //     name: "Nimesh",
+  //     designation: "Software Engineer",
+  //     image:
+  //       "/Nimesh.jpg",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Nuwani",
+  //     designation: "Product Manager",
+  //     image:
+  //       "/Nuwani.jpg",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Yeran",
+  //     designation: "Data Scientist",
+  //     image:
+  //       "/Yeran.jpg",
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "Lahiru",
+  //     designation: "UX Designer",
+  //     image:
+  //       "/Lahiru.jpg",
+  //   },
+  //   {
+  //     id: 5,
+  //     name: "Chenuka",
+  //     designation: "Soap Developer",
+  //     image:
+  //       "/Chenuka.jpg",
+  //   },
+  //   {
+  //     id: 6,
+  //     name: "Umaya",
+  //     designation: "The Explorer",
+  //     image:
+  //       "/Nethu.jpg",
+  //   },
+  //   {
+  //     id: 7,
+  //     name: "Pamitha",
+  //     designation: "The Explorer",
+  //     image:
+  //       "/Pamitha.jpg",
+  //   },
+  // ];
+
   export const people = [
     {
       id: 1,
-      name: "Nimesh",
-      designation: "Software Engineer",
+      name: "S.A.M.D Samaraweera",
+      designation: "Head of ICT",
       image:
-        "/Nimesh.jpg",
+        "/Samaraweera.jpg",
     },
     {
       id: 2,
-      name: "Nuwani",
-      designation: "Product Manager",
+      name: "Mallawaarachchi",
+      designation: "Deputy of ICT",
       image:
-        "/Nuwani.jpg",
+        "/Mallawarachchi.jpg",
     },
     {
       id: 3,
-      name: "Yeran",
-      designation: "Data Scientist",
+      name: "K.V.L. Chathuranga",
+      designation: "Senior Software Engineer",
       image:
-        "/Yeran.jpg",
+        "/Chathuranga.jpg",
     },
     {
       id: 4,
-      name: "Lahiru",
-      designation: "UX Designer",
+      name: "W.L.H.M.A.A. Bandara",
+      designation: "Senior Software Engineer",
       image:
-        "/Lahiru.jpg",
+        "/Bandara.jpg",
     },
     {
       id: 5,
-      name: "Chenuka",
-      designation: "Soap Developer",
+      name: "P.H.P.D. Gamlath",
+      designation: " Senior Software Engineer",
       image:
-        "/Chenuka.jpg",
+        "/Gamlath.jpg",
     },
     {
       id: 6,
-      name: "Umaya",
-      designation: "The Explorer",
+      name: "L.P.A.D. Pathirathne",
+      designation: "Senior Software Engineer",
       image:
-        "/Nethu.jpg",
+        "/Pathirathne.jpg",
     },
     {
       id: 7,
-      name: "Pamitha",
-      designation: "The Explorer",
+      name: "U.S. Mapalagama",
+      designation: "System Administrator",
       image:
-        "/Pamitha.jpg",
+        "/Mapalagama.jpg",
     },
   ];
 
