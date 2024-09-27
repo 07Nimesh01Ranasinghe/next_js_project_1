@@ -82,6 +82,7 @@ export default function About() {
       <Image
         src={card.image}
         alt={`Image ${card.id}`}
+        fill // new 2024/27/09
         layout="fill" // Adjust based on your requirements
         objectFit="cover" // Ensure the image covers the card area
         priority // Optionally add priority if these images are important for LCP

@@ -1,4 +1,3 @@
-
 "use client";
 
 import * as React from 'react';
@@ -8,13 +7,13 @@ import { useMemo } from 'react';
 import { mergeVertices, TextGeometry, TextGeometryParameters } from 'three-stdlib';
 import { useFont } from '@react-three/drei';
 
-extend({ RenamedTextGeometry: TextGeometry });
+extend({ TextGeometry });
 
 /* eslint-disable @typescript-eslint/no-namespace */
 declare global {
   namespace JSX {
     interface IntrinsicElements {
-      renamedTextGeometry: ReactThreeFiber.Object3DNode<TextGeometry, typeof TextGeometry>;
+      textGeometry: ReactThreeFiber.Object3DNode<TextGeometry, typeof TextGeometry>;
     }
   }
 }
@@ -30,7 +29,7 @@ type Text3DProps = {
   MeshProps;
 
 const types = ['string', 'number'];
-const getTextFromChildren = (children) => {
+const getTextFromChildren = (children: React.ReactNode) => {
   let label = '';
   const rest: React.ReactNode[] = [];
   React.Children.forEach(children, (child) => {
@@ -105,7 +104,7 @@ export const Text3D = React.forwardRef<THREE.Mesh, React.PropsWithChildren<Text3
 
     return (
       <mesh {...props} ref={ref}>
-        <renamedTextGeometry args={args} />
+        <textGeometry args={args} />
         {rest}
       </mesh>
     );
@@ -114,4 +113,5 @@ export const Text3D = React.forwardRef<THREE.Mesh, React.PropsWithChildren<Text3
 
 // Assign displayName for better debugging
 Text3D.displayName = 'Text3D';
+
 

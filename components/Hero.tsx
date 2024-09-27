@@ -1,9 +1,12 @@
+
+
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/text-generate-effect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
 import Text_3D from './Text_3D'
+
 
 const Hero = () => {
   return (
@@ -28,7 +31,7 @@ const Hero = () => {
 
         {/* 3D Text Component */}
         <div className="absolute inset-0 flex items-center mb-20 justify-center z-10">
-            <Text_3D text="DOCKYARD" />
+            <Text_3D text="DOCKYARD"/>
         </div>
         
 
