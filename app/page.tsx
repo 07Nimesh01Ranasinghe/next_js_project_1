@@ -132,6 +132,7 @@ import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
 import { TeamPreview } from "@/components/TeamPreview";
 
+
 export default function Home() {
   const { scrollYProgress } = useScroll();
   const [logoVisible, setLogoVisible] = useState(true);

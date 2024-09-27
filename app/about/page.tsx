@@ -96,6 +96,7 @@ import Footer from "@/components/Footer";
 import { navItems } from "@/data";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { WobbleCardDemo } from "@/components/WobbleCardDemo";
+import Text_3D from "@/components/Text_3D";
 
 export default function AboutPage() {
   const { scrollYProgress } = useScroll();
@@ -168,6 +169,11 @@ export default function AboutPage() {
 
         {/* Footer */}
         <Footer className="relative z-10 w-full mt-20" />
+
+        <div className="w-full h-screen">
+        <Text_3D text="Dockyard"/>
+        </div>
+        
       </div>
     </main>
   );
