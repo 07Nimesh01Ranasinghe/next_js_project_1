@@ -48,7 +48,7 @@ const config = {
           "500": "#9C27B0",
 
         },
-        p_glassy:"rgba(202, 0, 255, 0.1)",
+        p_glassy:"#f2f2f2",
         purple: "#CBACF9",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

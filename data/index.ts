@@ -290,7 +290,7 @@ export const navItems = [
       name: "P.C.P. Karunanayake",
       designation: "Systems Administrator (Networks & ICT Infrastructure)",
       des: "System Administrator, Microsoft Specialized Technology Specialist (MCTS) - Windows Vista, Configurations and Advanced Diploma Holder in Entrepreneurial Business Management. over 20+ years working experience in Network and ICT Infrastructure.",
-      image:"/Lahiru.jpg",
+      image:"/Karunanayake.jpg",
     },
     {
       id: 9,
@@ -311,7 +311,7 @@ export const navItems = [
       name: "B.R. Tharanga",
       designation: "Assistant Systems Administrator (Networks & ICT Infrastructure)",
       des: "Self driven and dedicated System Administrator (Hardware) - Over 20+ years of experience in IT sector, expertised in Hardware maintenance, troubleshooting, configuring and maintaining servers.",
-      image:"/Lahiru.jpg",
+      image:"/Tharanga.jpg",
     },
     {
       id: 12,
@@ -502,15 +502,15 @@ export const navItems = [
   export const socialMedia = [
     {
       id: 1,
-      img: "/icons8-twitter.svg",
+      img: "/twitterPurple.svg",
     },
     {
       id: 2,
-      img: "/icons8-linkedin.svg",
+      img: "/linkedinPurple.svg",
     },
     {
       id: 3,
-      img: "/icons8-facebook.svg",
+      img: "/facebookPurple.svg",
     },
   ];
 
