@@ -26,15 +26,20 @@ const RecentProjects = () => {
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D]"
                 >
-                  <Image src="/bg.png" alt="Background" layout="fill" objectFit="cover" />
+                  <Image 
+                  src="/bg.png" 
+                  alt="Background"
+                  width={1920} // Set an appropriate width
+                  height={1080} // Set an appropriate height
+                  className="object-cover w-full h-full"
+                  />
                 </div>
                 <Image
                   src={item.img}
                   alt={item.title}
-                  layout="intrinsic"
-                  width={500}
-                  height={300}
-                  className="z-10 absolute bottom-0"
+                  width={1920}
+                  height={1080}
+                  className="object-cover z-10 absolute bottom-0"
                 />
               </div>
 

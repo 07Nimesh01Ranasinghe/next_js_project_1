@@ -77,17 +77,17 @@ export const navItems = [
       id: 1,
       title: "Car Attendance System",
       des: "Struggling to manage vehicle attendance? Get real-time tracking and comprehensive reports effortlessly!",
-      img: "/Design3.jpg",
+      img: "/CarAttendance.jpg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "https://github.com/",
     },
     {
       id: 2,
       title: "Fleet Tracking System",
       des: "Struggling to track your fleet? Get real-time updates and comprehensive reports effortlessly",
-      img: "/Design2.jpg",
+      img: "/FleetTracking.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      link: "https://github.com/",
     },
     {
       id: 3,
@@ -95,7 +95,7 @@ export const navItems = [
       des: "You want a eligant web application? for your business. Contact with us and enhance your business...",
       img: "/DocCafeBreak.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      link: "https://github.com/",
     },
     {
       id: 4,
@@ -103,7 +103,7 @@ export const navItems = [
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/Carshop2.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      link: "https://github.com/",
     },
   ];
 

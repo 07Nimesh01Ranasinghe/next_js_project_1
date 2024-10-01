@@ -11,15 +11,14 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ className }) => {
   return (
-    <footer className={`w-full pt-20 pb-10 relative ${className}`} id="contact">
+    <footer className={`w-full pt-20 pb-10 relative overflow-hidden ${className}`} id="contact">
       {/* Background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <Image
           src="/footer-grid.svg"
           alt="grid"
-          className="w-full h-full opacity-50"
-          layout="fill" // Makes sure the image covers the full div
-          objectFit="cover" // Ensures the image fits the container properly
+          fill
+          className="w-full h-full opacity-50 object-cover"
         />
       </div>
 
