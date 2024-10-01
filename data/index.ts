@@ -33,7 +33,7 @@ export const navItems = [
       title: "Our Tech Stack",
       description: "We Know",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "",
+      imgClassName: "w-200 h-full",
       titleClassName: "justify-center text-white",
       img: "/technology_2.jpg",
       spareImg: "",
@@ -203,7 +203,7 @@ export const navItems = [
       name: "K.V.L. Chathuranga",
       designation: "Senior Software Engineer",
       image:
-        "/Chathuranga.jpg",
+        "/Chathuranga_new.jpg",
     },
     {
       id: 4,
@@ -269,7 +269,7 @@ export const navItems = [
       name: "K.V.L. Chathuranga",
       designation: "Senior Software Engineer",
       des: "Highly self-motivated Software Architect with the ability to be proactive in project execution. This includes 12+ years of experience and passion for software development and learning new technologies while empowering the team whith designing software system using agile software development. And participated, contributed, and provided leadership in multiple capacities to multiple technology and process transformations in software product and development over the years.",
-      image:"/Chathuranga.jpg",
+      image:"/Chathuranga_new.jpg",
     },
     {
       id: 6,

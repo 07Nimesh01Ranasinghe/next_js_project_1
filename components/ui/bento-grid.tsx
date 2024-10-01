@@ -120,9 +120,11 @@ export const BentoGridItem = ({
               <Image
                 src={img}
                 alt={`image-${id}`} // Updated alt text to reflect the card id, improving accessibility
-                className={cn(imgClassName, "object-cover object-center ")}
-                layout="fill" // Ensures the image covers the full div
-                objectFit="cover" // Keeps the image aspect ratio intact
+                // className="object-cover object-center w-full h-full"
+                width={800} // Set an appropriate width value
+                height={600} // Set an appropriate height value
+                className={cn(imgClassName, "object-cover object-center w-full h-full")}
+                
               />
             )
           )}
@@ -135,8 +137,10 @@ export const BentoGridItem = ({
             <Image
               src={spareImg}
               alt={`spare-image-${id}`}
-              layout="fill" // Ensures the image covers the full div
-              objectFit="cover" // Keeps the image aspect ratio intact
+              // className="object-cover object-center w-full h-full"
+              width={800} // Set an appropriate width value
+              height={600} // Set an appropriate height value
+              className={cn(imgClassName, "object-cover object-center w-full h-full")}
             />
           )}
         </div>
