@@ -157,10 +157,10 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-p-500 z-10">
             {description}
           </div>
-          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 text-p-200">
             {title}
           </div>
 
@@ -173,7 +173,7 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center text-white bg-blue-950"
+                    lg:opacity-100 rounded-lg text-center text-white-100 bg-blue-950"
                   >
                     {item}
                   </span>
@@ -186,7 +186,7 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center text-white bg-blue-950"
+                    lg:opacity-100 rounded-lg text-center text-white-100 bg-blue-950"
                   >
                     {item}
                   </span>
@@ -207,7 +207,7 @@ export const BentoGridItem = ({
               </div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
+                title={copied ? "Email is Copied!" : "Copy our email address"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}

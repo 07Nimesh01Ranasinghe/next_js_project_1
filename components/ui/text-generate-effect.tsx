@@ -26,7 +26,7 @@ export const TextGenerateEffect = ({
       },
       {
         duration: duration ? duration : 1,
-        delay: stagger(0.2),
+        delay: stagger(0.4),
       }
     );
   }, [animate, duration, filter]); // Added `animate`, `duration`, and `filter` to dependencies
