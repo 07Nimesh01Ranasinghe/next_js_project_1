@@ -55,7 +55,7 @@ export default function AboutPage() {
               initial={{ opacity: 1, y: -100 }}
               animate={{ y: logoVisible ? 0 : -100, opacity: logoVisible ? 1 : 0 }}
               transition={{ duration: 0.2 }}
-              className="flex items-center justify-between py-4 fixed top-10 left-0 right-0 z-40 px-4"
+              className="flex items-center justify-between py-4 fixed top-10 left-0 right-0 z-50"
             >
               {/* Logo with animation matching the navbar */}
               <motion.div
@@ -64,8 +64,8 @@ export default function AboutPage() {
                 transition={{ duration: 0.3 }}
                 className="text-xl font-bold pl-4"
               >
-                <span className="text-2xl text-black-100">Dockyard</span>
-                <span className="text-purple">Software</span>
+                <span className="text-3xl text-black-100">Dockyard</span>
+                <span className="text-purple bg-p_glassy px-1 rounded">Software</span>
               </motion.div>
             </motion.header>
           )}
