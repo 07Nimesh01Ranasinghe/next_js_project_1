@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
-// import { GlobeDemo } from "./GridGlobe";
+// import GridGlobe from "./GridGlobe";
 import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
@@ -106,7 +106,7 @@ export const BentoGridItem = ({
           {id === 1 ? ( // Render video for the first grid item
             <video
               ref={videoRef}
-              src="/tech.mp4" // Replace with your video source
+              src="/techVideo_2.mp4" // Replace with your video source
               loop
               muted
               playsInline
@@ -160,11 +160,11 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-p-500 z-10">
             {description}
           </div>
-          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 text-p-200">
+          <div className="font-sans font-bold text-sm lg:text-xl max-w-96 z-10 text-">
             {title}
           </div>
 
-          {/* {id === 2 && <GlobeDemo />} */}
+          {/* {id === 2 && <GridGlobe />} */}
 
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
