@@ -5,7 +5,7 @@ import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/text-generate-effect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
-import GridGlobe from './ui/GridGlobe'
+import { GlobeDemo } from './GlobeDemo'
 
 
 const Hero = () => {
@@ -30,16 +30,16 @@ const Hero = () => {
         </div>
 
         {/* 3D Component */}
-        <div className="absolute inset-0 flex  items-center justify-center z--30 mt-12">
-            <GridGlobe/>
+        <div className="absolute inset-0 flex  items-center justify-center z--30 mt-52">
+            <GlobeDemo/>
         </div>
 
         
 
-        <div className='flex justify-center relative md:mt-[-70px] z-10'>
+        <div className='flex justify-center relative md:mt-[-120px] lg:mt-[-40px] z-10'>
             
-            <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center mt-1'>
-                {/* <h2 className='uppercase tracking-widest text-xs text-center text-p-200 max-w-80'>Dynamic Web Magic with Dockyard Software</h2> */}
+            <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center mt-0'>
+                
                 
                 <TextGenerateEffect 
                     className='text-center md:text-[10px] lg:text-[50px] md:text-xl lg:text-6xl'
@@ -47,10 +47,10 @@ const Hero = () => {
                     words='Designing Digital Solutions That Simplify Your Life'
                 />
 
-                <p className='text-center text-black-100 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
+                <p className='text-center text-black-100 md:tracking-wider mb-0 text-sm md:text-lg lg:text-2xl'>
                     Hey, We are Dockyard Software
                 </p>
-                <a href='#projects' className=' md:mt-0 lg:mt-0'>
+                <a href='#projects' className='justify-center md:mt-[-5px] lg:mt-0'>
                     <MagicButton
                         title="Our Works"
                         icon={<FaLocationArrow/>}

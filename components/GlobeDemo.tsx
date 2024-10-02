@@ -1,13 +1,14 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 
-const World = dynamic(() => import("./Globe").then((m) => m.World), {
+const World = dynamic(() => import("@/components/ui/globe").then((m) => m.World), {
   ssr: false,
 });
 
-const GridGlobe = () => {
+export function GlobeDemo() {
+    const containerRef = useRef(null); // Track container size
+
   const globeConfig = {
     pointSize: 4,
     globeColor: "#062056",
@@ -394,42 +395,34 @@ const GridGlobe = () => {
     },
   ];
 
+  useEffect(() => {
+    const observer = new ResizeObserver(() => {
+      // Logic to adjust the globe size based on the container’s dimensions
+      if (containerRef.current) {
+        // const container = containerRef.current;
+        // const width = container.offsetWidth;
+        // const height = container.offsetHeight;
+        // Set the canvas or globe dimensions as needed
+      }
+    });
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    // remove dark:bg-black bg-white h-screen md:h-auto  w-full flex-row py-20
-    // change absolute -left-5 top-36, add w-full h-full md:top-40
-    <div className="flex items-center justify-center absolute inset-0 md:top-40 w-full h-full">
-      {/* remove h-full md:h-[40rem] */}
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-[24rem] md:h-[40rem] px-4">
-        {/* remove these text divs */}
-        {/* <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 1,
-          }}
-          className="div"
-        >
-          <h2 className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">
-            We sell soap worldwide
-          </h2>
-          <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-            This globe is interactive and customizable. Have fun with it, and
-            don&apos;t forget to share it.
-          </p>
-        </motion.div> */}
+    <div className="items-center justify-center py-4 h-auto dark:bg-black bg-white relative w-full">
+      <div ref={containerRef} className="max-w-7xl mx-auto w-full relative overflow-hidden h-[35rem]">
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-        {/* remove -bottom-20 */}
-        <div className="absolute w-full h-full z-10">
+        <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
     </div>
   );
-};
-export default GridGlobe;
+}
