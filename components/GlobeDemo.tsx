@@ -1,14 +1,12 @@
+// Optimized GlobeDemo.tsx
 "use client";
 import React, { useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 
-const World = dynamic(() => import("@/components/ui/globe").then((m) => m.World), {
-  ssr: false,
-});
+const World = dynamic(() => import("@/components/ui/globe").then(m => m.World), { ssr: false });
+
 
 export function GlobeDemo() {
-    const containerRef = useRef(null); // Track container size
-
   const globeConfig = {
     pointSize: 4,
     globeColor: "#062056",
@@ -395,15 +393,12 @@ export function GlobeDemo() {
     },
   ];
 
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
     const observer = new ResizeObserver(() => {
       // Logic to adjust the globe size based on the container’s dimensions
-      if (containerRef.current) {
-        // const container = containerRef.current;
-        // const width = container.offsetWidth;
-        // const height = container.offsetHeight;
-        // Set the canvas or globe dimensions as needed
-      }
+     
     });
 
     if (containerRef.current) {
@@ -416,8 +411,8 @@ export function GlobeDemo() {
   }, []);
 
   return (
-    <div className="items-center justify-center py-4 h-auto dark:bg-black bg-white relative w-full">
-      <div ref={containerRef} className="max-w-7xl mx-auto w-full relative overflow-hidden h-[35rem]">
+    <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
+      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-[400px] md:h-[500px] ">
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
         <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
           <World data={sampleArcs} globeConfig={globeConfig} />

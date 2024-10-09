@@ -2,18 +2,19 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import { FaMobileAlt, FaGlobe, FaDesktop, FaChartLine, FaPencilRuler, FaRobot, FaBullhorn, FaPalette } from "react-icons/fa";
 
 const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        Our <span className="text-purple">approach</span>
+        Our <span className="text-purple">work flow</span>
       </h1>
-      <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
+      <div className="my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-center justify-center w-full">
         <Card
-          title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
+          title="Mobile App Development"
+          icon={<FaMobileAlt className="text-6xl text-white" />}
+          des="Developing Mobile applications which are Responsive, Optimized, User Friendly mobile applications using Latest technology."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -21,9 +22,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
-          icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, we cue my lofi playlist and dive into coding. From initial sketches to polished code, We keep you updated every step of the way."
+          title="Web Application Development"
+          icon={<FaGlobe className="text-6xl text-white" />}
+          des="Designing fully Responsive Web applications, User friendly, User attractive using Latest technology."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -33,9 +34,64 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Launch"
-          icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, We'll translate everything into functional code, building your website from the ground up."
+          title="Desktop Applications"
+          icon={<FaDesktop className="text-6xl text-white" />}
+          des="Developing Desktop Applications for windows, with more Utilization, and functionalities to do more tasks using Latest Tech."
+        >
+          <CanvasRevealEffect
+            animationSpeed={3}
+            containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
+            colors={[[125, 211, 252]]}
+          />
+        </Card>
+        <Card
+          title="Business Intelligence"
+          icon={<FaChartLine className="text-6xl text-white" />}
+          des="Business Analytics, Data Mining, Data Visualization, Data tools and Infrastructure, and Best Practices to help organizations make more data-driven Decisions."
+        >
+          <CanvasRevealEffect
+            animationSpeed={3}
+            containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
+            colors={[[125, 211, 252]]}
+          />
+        </Card>
+        <Card
+          title="UI/UX"
+          icon={<FaPencilRuler className="text-6xl text-white" />}
+          des="Solving User Problems and Creating relevant, easy, Enjoyable and accessible experiences. And it covers all the Visual and Interactive properties of websites, Software and Apps - from Colors and Typography to Buttons, Scroll Functions, Animations and more."
+        >
+          <CanvasRevealEffect
+            animationSpeed={3}
+            containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
+            colors={[[125, 211, 252]]}
+          />
+        </Card>
+        <Card
+          title="Robotics, ML and IOT"
+          icon={<FaRobot className="text-6xl text-white" />}
+          des="Smart alarming systems, Sensors, GSM Modules."
+        >
+          <CanvasRevealEffect
+            animationSpeed={3}
+            containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
+            colors={[[125, 211, 252]]}
+          />
+        </Card>
+        <Card
+          title="Digital Marketing"
+          icon={<FaBullhorn className="text-6xl text-white" />}
+          des="Digital Marketing, SEO, Social Media Advertising, Video Marketing, email Marketing, Web Analytics."
+        >
+          <CanvasRevealEffect
+            animationSpeed={3}
+            containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
+            colors={[[125, 211, 252]]}
+          />
+        </Card>
+        <Card
+          title="Graphic & Design"
+          icon={<FaPalette className="text-6xl text-white" />}
+          des="Logo Design, Brand Styles, Business Cards."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -116,24 +172,24 @@ const Card: React.FC<CardProps> = ({ title, icon, children, des }) => {
   );
 };
 
-const AceternityIcon = ({ order }: { order: string }) => {
-  return (
-    <div>
-      <button className="relative inline-flex overflow-hidden rounded-full p-[1px] ">
-        <span
-          className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
-         bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
-        />
-        <span
-          className="inline-flex h-full w-full cursor-pointer items-center 
-        justify-center rounded-full bg-slate-950 px-5 py-2 text-purple backdrop-blur-3xl font-bold text-2xl"
-        >
-          {order}
-        </span>
-      </button>
-    </div>
-  );
-};
+// const AceternityIcon = ({ order }: { order: string }) => {
+//   return (
+//     <div>
+//       <button className="relative inline-flex overflow-hidden rounded-full p-[1px] ">
+//         <span
+//           className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
+//          bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+//         />
+//         <span
+//           className="inline-flex h-full w-full cursor-pointer items-center 
+//         justify-center rounded-full bg-slate-950 px-5 py-2 text-purple backdrop-blur-3xl font-bold text-2xl"
+//         >
+//           {order}
+//         </span>
+//       </button>
+//     </div>
+//   );
+// };
 
 interface IconProps {
   className: string;
