@@ -1551,9 +1551,12 @@ export function Globe({ globeConfig, data }: WorldProps) {
         .showAtmosphere(defaultProps.showAtmosphere)
         .atmosphereColor(defaultProps.atmosphereColor)
         .atmosphereAltitude(defaultProps.atmosphereAltitude)
-        .hexPolygonColor(() => {
-          return defaultProps.polygonColor;
-        });
+        // .hexPolygonColor(() => {
+        //   return defaultProps.polygonColor;
+        // });
+        .hexPolygonColor(() => "#ffffff");
+
+        
       startAnimation();
     }
   }, [globeData]);
