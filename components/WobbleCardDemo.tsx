@@ -28,10 +28,10 @@ export function WobbleCardDemo() {
         className=""
       >
         <div className="max-w-xs">
-          <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+          <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-extrabold tracking-[-0.015em] text-white">
           Values
           </h2>
-          <p className="mt-4 text-left  text-base/6 text-neutral-200">
+          <p className="mt-4 text-left  text-base/6 text-white font-semibold">
           We add value to the industry as the business partner through diversified business
           solutions derived from state of the art technology blended with our well.
           </p>
@@ -47,20 +47,20 @@ export function WobbleCardDemo() {
         /> */}
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 bg-p-200 min-h-[300px]">
-        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-extrabold tracking-[-0.015em] text-white">
             Vision
         </h2>
-        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-white font-semibold">
             Un-detachable partner in total solutions.
         </p>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-p-400 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="flex flex-col md:flex-row items-center justify-between w-full">
             <div className="max-w-sm">
-            <h2 className="max-w-sm md:max-w-lg text-left text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+            <h2 className="max-w-sm md:max-w-lg text-left text-base md:text-xl lg:text-3xl font-extrabold tracking-[-0.015em] text-white">
                 Who We Are?
             </h2>
-            <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+            <p className="mt-4 max-w-[26rem] text-left text-base/6 text-white font-semibold">
                 Dockyard Total Solutions (Pvt) Ltd (DTS), a subsidiary of Colombo Dockyard
                 PLC with over 35% government ownership, specializes in ICT systems engineering.
                 Established under the Companies Act of 2007, DTS provides comprehensive ICT

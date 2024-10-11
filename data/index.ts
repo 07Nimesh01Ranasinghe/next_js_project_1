@@ -1,8 +1,10 @@
+
+
 export const navItems = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
-    { name: "Projects", link: "/#projects" },
-    { name: "Testimonials", link: "/#testimonials" },
+    { name: "Projects", link: "#projects" },
+    { name: "Testimonials", link: "/testimonials" },
     { name: "Careers", link: "/careers" },
     { name: "Contact", link: "/contact" },
   ];
@@ -77,7 +79,7 @@ export const navItems = [
       id: 1,
       title: "Car Attendance System",
       des: "Struggling to manage vehicle attendance? Get real-time tracking and comprehensive reports effortlessly!",
-      img: "/CarAttendance.jpg",
+      img: "/CarAttendance2.jpg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "https://github.com/",
     },
@@ -85,7 +87,7 @@ export const navItems = [
       id: 2,
       title: "Fleet Tracking System",
       des: "Struggling to track your fleet? Get real-time updates and comprehensive reports effortlessly",
-      img: "/FleetTracking.jpg",
+      img: "/FleetTracking2.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "https://github.com/",
     },
@@ -503,14 +505,17 @@ export const navItems = [
     {
       id: 1,
       img: "/twitterPurple.svg",
+      
     },
     {
       id: 2,
       img: "/linkedinPurple.svg",
+      url: "https://www.linkedin.com/company/dockyard-total-solutions/posts/?feedView=all"
     },
     {
       id: 3,
       img: "/facebookPurple.svg",
+      url: "https://www.facebook.com/share/YfU1To7QSmnZtYW3/"
     },
   ];
 
@@ -540,3 +545,7 @@ export const navItems = [
       
     },
   ];
+
+
+
+  // dtslife21@gmail.com

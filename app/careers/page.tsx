@@ -289,8 +289,8 @@ export default function CareersPage() {
                 transition={{ duration: 0.3 }}
                 className="text-xl font-bold pl-4"
               >
-                <span className="text-3xl text-black-100">Dockyard</span>
-                <span className="text-purple bg-p_glassy px-1 rounded">Software</span>
+                <span className="text-3xl text-black-100">DOCKYARD</span>
+                <span className="text-purple bg-p_glassy px-1 rounded">SOFTWARE</span>
               </motion.div>
             </motion.header>
           )}

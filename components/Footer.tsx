@@ -1,10 +1,9 @@
 import React from 'react';
-import Image from 'next/image'; // Import Image component from next/image
+import Image from 'next/image';
 import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
 import MagicButton from "./ui/MagicButton";
 
-// Define the FooterProps interface to accept className as an optional prop
 interface FooterProps {
   className?: string;
 }
@@ -31,7 +30,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
           Reach out to us today and let&apos;s discuss how we can help you
           achieve your goals.
         </p>
-        <a href="mailto:coldock@cdl.lk">
+        <a href="mailto:dtslife21@gmail.com">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -46,17 +45,20 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
 
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
-            <div
+            <a
               key={info.id}
+              href={info.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-white rounded-lg border border-black-300"
             >
               <Image
                 src={info.img}
-                alt={`icon-${info.id}`}
+                alt={`${info.id} icon`} // Updated alt text for accessibility
                 width={30}
                 height={30}
               />
-            </div>
+            </a>
           ))}
         </div>
       </div>
@@ -65,6 +67,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
 };
 
 export default Footer;
+
 
 
 
