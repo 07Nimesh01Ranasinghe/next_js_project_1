@@ -505,6 +505,7 @@ export const navItems = [
     {
       id: 1,
       img: "/twitterPurple.svg",
+      url: "https://x.com/homex_nft?lang=en"
       
     },
     {
