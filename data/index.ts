@@ -16,7 +16,7 @@ export const navItems = [
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
-      titleClassName: "justify-start",
+      titleClassName: "flex items-center",
       img: "/DSC_1.jpg", //changed
       spareImg: "",
     },
@@ -26,7 +26,7 @@ export const navItems = [
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
-      titleClassName: "flex justify-center",
+      titleClassName: "flex justify-center items-start",
       img: "/girdImage_3.png",
       spareImg: "",
     },
@@ -46,7 +46,7 @@ export const navItems = [
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
-      titleClassName: "justify-start",
+      titleClassName: "text-white flex justify-center items-center",
       img: "/development.gif",
       // spareImg: "/b4.svg",
     },
@@ -54,11 +54,11 @@ export const navItems = [
     {
       id: 5,
       title: "Currently working on: Richmand Collage Cricket Web site",
-      description: "The Inside Scoop",
+      description: "",
       className: "md:col-span-3 md:row-span-2",
       // imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       imgClassName: "absolute inset-0 m-auto w-full h-full object-contain",
-      titleClassName: "justify-end md:justify-end lg:justify-end",
+      titleClassName: "text-white flex justify-start md:justify-start lg:justify-start",
       img: "/MockupView.png",
       spareImg: "/grid.svg",
     },
@@ -191,45 +191,45 @@ export const navItems = [
       name: "S.A.M.D Samaraweera",
       designation: "Head of ICT",
       image:
-        "/Samaraweera.jpg",
+        "/Samaraweera.png",
     },
+    // {
+    //   id: 0,
+    //   name: "Mallawaarachchi",
+    //   designation: "Deputy of ICT",
+    //   image:
+    //     "/Mallawarachchi.jpg",
+    // },
     {
       id: 2,
-      name: "Mallawaarachchi",
-      designation: "Deputy of ICT",
-      image:
-        "/Mallawarachchi.jpg",
-    },
-    {
-      id: 3,
       name: "K.V.L. Chathuranga",
       designation: "Senior Software Engineer",
       image:
-        "/Chathuranga_new.jpg",
+        "/chathuranga.png",
+    },
+    {
+      id: 3,
+      name: "W.Lakmali",
+      designation: "Senior Software Engineer",
+      image:
+        "/lakmali.png",
     },
     {
       id: 4,
-      name: "W.L.H.M.A.A. Bandara",
-      designation: "Senior Software Engineer",
+      name: "Anumi Gunarathna",
+      designation: "Intern",
       image:
-        "/Bandara.jpg",
+        "/Anumi Gunarathna.png",
     },
     {
       id: 5,
-      name: "P.H.P.D. Gamlath",
-      designation: " Senior Software Engineer",
-      image:
-        "/Gamlath.jpg",
-    },
-    {
-      id: 6,
       name: "L.P.A.D. Pathirathne",
       designation: "Senior Software Engineer",
       image:
         "/Pathirathne.jpg",
     },
     {
-      id: 7,
+      id: 6,
       name: "U.S. Mapalagama",
       designation: "System Administrator",
       image:
@@ -250,12 +250,12 @@ export const navItems = [
       name: "S.A.M.D Samaraweera",
       designation: "Head of ICT - (Colombo Dockyard PLC & DTS ICT Centre)",
       des: "Highly self-motivated Software Architect with the ability to be proactive in project execution. This includes 12+ years of experience and passion for software development and learning new technologies while empowering the team whith designing software system using agile software development. And participated, contributed, and provided leadership in multiple capacities to multiple technology and process transformations in software product and development over the years.",
-      image:"/Samaraweera.jpg",
+      image:"/Samaraweera.png",
     },
     {
       id: 3,
       name: "A.U Mallawaarachchi",
-      designation: "Head of Section - (Colombo Dockyard PLC ICT Cntre)",
+      designation: "Head of Section - (Colombo Dockyard PLC ICT Centre)",
       des: "Started the journey with capabilities of software development and served the company by developing many mission critical applications with the passion of exploring new areas. Skilled at operating in a wide range of system platforms with excellent industrial-oriented technical skills and human resource management skills with a reputation for resolving mission-critical problems and improving customer satisfaction by helping them on achieving company objectives. Strongly lead to the result-oriented work scope with best communication methods",
       image:"/Mallawarachchi.jpg",
     },
@@ -271,7 +271,7 @@ export const navItems = [
       name: "K.V.L. Chathuranga",
       designation: "Senior Software Engineer",
       des: "Highly self-motivated Software Architect with the ability to be proactive in project execution. This includes 12+ years of experience and passion for software development and learning new technologies while empowering the team whith designing software system using agile software development. And participated, contributed, and provided leadership in multiple capacities to multiple technology and process transformations in software product and development over the years.",
-      image:"/Chathuranga_new.jpg",
+      image:"/chathuranga.png",
     },
     {
       id: 6,

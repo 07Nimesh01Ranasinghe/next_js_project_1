@@ -324,9 +324,9 @@ export default function CareersPage() {
                 href="#"
                 className="inline-block text-center bg-purple-500 text-purple font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-purple-600 transition duration-300"
               >
-                Send us your CV
+                dockyardsoftware@gmail.com
               </a>
-              <p className="text-sm mt-4">Upload your CV — up to 32 MB</p>
+              <p className="text-sm mt-4 ml-6 font-medium">Send your CV through this!</p>
             </div>
           </div>
         </section>
