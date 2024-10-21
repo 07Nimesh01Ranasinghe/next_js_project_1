@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+
+.effect {
+    position: relative;
+    font-family: "Playfair Display", serif;
+    font-weight: 650;
+    text-transform: uppercase;
+    font-size: 8.3em;
+    color: #1d4769;
+    text-align: center;
+}
+
+#dockyard-text{
+    top: -5%;
+    left: -10%;
+}
+
+.effect:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 55%; /* Position below the original text */
+    left: 0;
+    right: 0;
+    color: #1d4769; /* Adjust reflection color (faded blue) */
+    transform: scaleY(-1); /* Flip the text vertically */
+    opacity: 0.7; /* Lower the opacity */
+    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, transparent 50%); /* Fading mask effect */
+}
+
+#software-text {
+    color: #632b6c;
+    left: 10%;
+}
+
+#software-text:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 55%;
+    left: 0;
+    right: 0;
+    color: #632b6c; /* Adjust reflection color (faded purple) */
+    transform: scaleY(-1); /* Flip the text vertically */
+    opacity: 0.7; /* Lower the opacity */
+    mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, transparent 50%); /* Fading mask effect */
+}
+
