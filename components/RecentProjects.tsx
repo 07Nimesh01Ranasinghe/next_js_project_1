@@ -23,23 +23,23 @@ const RecentProjects = () => {
           >
             <PinContainer title="Visit" href={item.link || "https://twitter.com/mannupaaji"}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
-                <div
+                {/* <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D]"
                 >
                   <Image 
                   src="/bg.png" 
                   alt="Background"
-                  width={1920} // Set an appropriate width
-                  height={1080} // Set an appropriate height
+                  width={720} // Set an appropriate width
+                  height={720} // Set an appropriate height
                   className="object-cover w-full h-full"
                   />
-                </div>
+                </div> */}
                 <Image
                   src={item.img}
                   alt={item.title}
-                  width={1920}
-                  height={1080}
-                  className="object-cover z-10 absolute bottom-0"
+                  width={720}
+                  height={720}
+                  className="object-fit z-10 absolute bottom-0"
                 />
               </div>
 

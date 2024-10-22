@@ -3,8 +3,8 @@
 export const navItems = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "/testimonials" },
+    { name: "Projects", link: "/projects" },
+    // { name: "Testimonials", link: "/testimonials" },
     { name: "Careers", link: "/careers" },
     { name: "Contact", link: "/contact" },
   ];
@@ -79,7 +79,7 @@ export const navItems = [
       id: 1,
       title: "Car Attendance System",
       des: "Struggling to manage vehicle attendance? Get real-time tracking and comprehensive reports effortlessly!",
-      img: "/CarAttendance2.jpg",
+      img: "/CarAttendance2.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "https://github.com/",
     },
@@ -87,7 +87,7 @@ export const navItems = [
       id: 2,
       title: "Fleet Tracking System",
       des: "Struggling to track your fleet? Get real-time updates and comprehensive reports effortlessly",
-      img: "/FleetTracking2.jpg",
+      img: "/FleetTracking2.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "https://github.com/",
     },
@@ -189,7 +189,7 @@ export const navItems = [
     {
       id: 1,
       name: "S.A.M.D Samaraweera",
-      designation: "Head of ICT",
+      designation: "Head of Section",
       image:
         "/Samaraweera.png",
     },
@@ -203,7 +203,7 @@ export const navItems = [
     {
       id: 2,
       name: "K.V.L. Chathuranga",
-      designation: "Senior Software Engineer",
+      designation: "Lead Software Engineer",
       image:
         "/chathuranga.png",
     },
@@ -216,24 +216,24 @@ export const navItems = [
     },
     {
       id: 4,
-      name: "Anumi Gunarathna",
-      designation: "Intern",
+      name: "S.A.N.R Gunasekara",
+      designation: "IOT Software Engineer",
+      image:
+        "/Nirmitha.png",
+    },
+    {
+      id: 5,
+      name: "Anumi Gunarathne",
+      designation: "Intern Software Engineer",
       image:
         "/Anumi Gunarathna.png",
     },
     {
-      id: 5,
-      name: "L.P.A.D. Pathirathne",
-      designation: "Senior Software Engineer",
-      image:
-        "/Pathirathne.jpg",
-    },
-    {
       id: 6,
-      name: "U.S. Mapalagama",
-      designation: "System Administrator",
+      name: "Lahiru Jayasinghe",
+      designation: "Intern Software Engineer",
       image:
-        "/Mapalagama.jpg",
+        "/Loottaa.png",
     },
   ];
 
@@ -243,12 +243,13 @@ export const navItems = [
       name: "Mr. Rohan De Silva",
       designation: "General Manager",
       des: "Joined Colombo Dockyard PLC in 1988 and has 35 years of experience in the field of finance and Management Accounting. Master of Business Management from Institute of Chartered Financial Analyst India. Member of the Association of Business Executives (UK). Member of Certified Professional Managers. Trained in General Management at National University of Singapore (NUS). He has served in Colombo Dockyard PLC and its subsidiary for 36 years, holding number of senior management positions in Finance and Administration activies.",
-      image:"/Lahiru.jpg",
+      image:"/Rohan.png",
     },
     {
       id: 2,
       name: "S.A.M.D Samaraweera",
-      designation: "Head of ICT - (Colombo Dockyard PLC & DTS ICT Centre)",
+      // designation: "Head of ICT - (Colombo Dockyard PLC & DTS ICT Centre)",
+      designation: "Head Of Section (Information Systems)",
       des: "Highly self-motivated Software Architect with the ability to be proactive in project execution. This includes 12+ years of experience and passion for software development and learning new technologies while empowering the team whith designing software system using agile software development. And participated, contributed, and provided leadership in multiple capacities to multiple technology and process transformations in software product and development over the years.",
       image:"/Samaraweera.png",
     },
@@ -327,21 +328,21 @@ export const navItems = [
       name: "W. Lakmali",
       designation: "Senior Software Engineer",
       des: "",
-      image:"/Lahiru.jpg",
+      image:"/lakmali.png",
     },
     {
       id: 14,
       name: "R.A.N.P. Perara",
       designation: "Software Engineer",
       des: "",
-      image:"/Lahiru.jpg",
+      image:"/nilusha.png",
     },
     {
       id: 15,
       name: "S.A.N.R. Gunasekara",
-      designation: "Software Engineer",
+      designation: "IOT Software Engineer",
       des: "",
-      image:"/Lahiru.jpg",
+      image:"/Nirmitha.png",
     },
     {
       id: 16,
@@ -369,7 +370,7 @@ export const navItems = [
       name: "Y.A.D.I. Yapa",
       designation: "Software Engineer",
       des: "",
-      image:"/Lahiru.jpg",
+      image:"/Yapa.png",
     },
     {
       id: 20,
@@ -381,9 +382,9 @@ export const navItems = [
     {
       id: 21,
       name: "K.D.B.N. Thilakarathne",
-      designation: "Associate Software Engineer",
+      designation: "Trainee Software Engineer",
       des: "",
-      image:"/Lahiru.jpg",
+      image:"/Binura.png",
     },
     {
       id: 22,
@@ -395,9 +396,82 @@ export const navItems = [
     {
       id: 23,
       name: "Rajitha Rajapaksha",
-      designation: "Head of DTS",
+      designation: "Head Of Section",
       des: "Experienced ICT leader with over 34 years in the industry, driving technological excellence and innovation. Proven track record of implementing cutting-edge solutions, optimizing IT infrastructure, and leading high-performing teams. A visionary strategist adept at aligning technology with business goals to achieve operational efficiency and competitive advantage.",
-      image:"/Lahiru.jpg",
+      image:"/Rajitha.png",
+    },
+    {
+      id: 24,
+      name: "S.K. Gamage",
+      designation: "Trainee Software Engineer",
+      des: "",
+      image: "/Gamage.png",
+    },
+    {
+      id: 25,
+      name: "Anumi Gunarathne",
+      designation: "Intern Software Engineer",
+      image:"/Anumi Gunarathna.png",
+    },
+    {
+      id: 26,
+      name: "Sachit Jayasundara",
+      designation: "Intern",
+      image:"/Sachith.png",
+    },
+    {
+      id: 27,
+      name: "Randeera Withanage",
+      designation: "Intern",
+      image:"/Randeera.png",
+    },
+    {
+      id: 28,
+      name: "Chenuka Kuruppu	",
+      designation: "Intern",
+      image:"/Chenuka.png",
+    },
+    {
+      id: 29,
+      name: "Yeran Fernando",
+      designation: "Intern",
+      image:"/Yeran.png",
+    },
+    {
+      id: 30,
+      name: "Kavindu Nimesh",
+      designation: "Intern",
+      image:"/nimesh.png",
+    },
+    {
+      id: 31,
+      name: "Umaya Nethmi",
+      designation: "Intern",
+      image:"/nethmi.png",
+    },
+    {
+      id: 32,
+      name: "Kushan Nalinka",
+      designation: "Intern",
+      image:"/Kushan.png",
+    },
+    {
+      id: 33,
+      name: "Nuwani Nimesha",
+      designation: "Intern",
+      image:"/Nuwani_1.png",
+    },
+    {
+      id: 34,
+      name: "Pamitha Pankaja",
+      designation: "Intern",
+      image:"/pamitha.png",
+    },
+    {
+      id: 35,
+      name: "Duhithu Sakuni",
+      designation: "QA Intern",
+      image:"/Duhithu.png",
     },
 
   ];
