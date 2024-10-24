@@ -27,17 +27,17 @@ export const navItems = [
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "flex justify-center items-start",
-      // img: "/girdImage_3.png",
+      img: "/Grid2Bg_1.png",
       spareImg: "",
     },
     {
       id: 3,
       title: "Our Tech Stack",
-      description: "We Know",
+      // description: "We Know",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "w-200 h-full",
       titleClassName: "justify-center ",
-      // img: "/technology_2.jpg",
+      img: "/Stackbg.png",
       spareImg: "",
     },
     {
@@ -47,7 +47,7 @@ export const navItems = [
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "flex justify-center items-center",
-      // img: "/development.gif",
+      img: "/development_1.gif",
       // spareImg: "/b4.svg",
     },
   
@@ -188,10 +188,10 @@ export const navItems = [
   export const people = [
     {
       id: 1,
-      name: "S.A.M.D Samaraweera",
-      designation: "Head of Section",
+      name: "W.Lakmali",
+      designation: "Senior Software Engineer",
       image:
-        "/Samaraweera.png",
+        "/lakmali.png",
     },
     // {
     //   id: 0,
@@ -202,38 +202,38 @@ export const navItems = [
     // },
     {
       id: 2,
-      name: "K.V.L. Chathuranga",
-      designation: "Lead Software Engineer",
-      image:
-        "/chathuranga.png",
-    },
-    {
-      id: 3,
-      name: "W.Lakmali",
-      designation: "Senior Software Engineer",
-      image:
-        "/lakmali.png",
-    },
-    {
-      id: 4,
       name: "S.A.N.R Gunasekara",
       designation: "IOT Software Engineer",
       image:
         "/Nirmitha.png",
     },
     {
-      id: 5,
-      name: "Anumi Gunarathne",
-      designation: "Intern Software Engineer",
-      image:
-        "/Anumi Gunarathna.png",
+      id: 3,
+      name: "R.A.N.P. Perara",
+      designation: "Software Engineer",
+      des: "",
+      image:"/nilusha.png",
     },
     {
-      id: 6,
+      id: 4,
       name: "Lahiru Jayasinghe",
       designation: "Intern UI/UX Engineer",
       image:
         "/Loottaa.png",
+    },
+    {
+      id: 5,
+      name: "Nimesh",
+      designation: "Associate Software Engineer",
+      image:
+        "/nimesh.png",
+    },
+    {
+      id: 6,
+      name: "S.K. Gamage",
+      designation: "Software Engineer",
+      des: "",
+      image: "/Gamage.png",
     },
   ];
 
@@ -249,7 +249,7 @@ export const navItems = [
       id: 2,
       name: "S.A.M.D Samaraweera",
       // designation: "Head of ICT - (Colombo Dockyard PLC & DTS ICT Centre)",
-      designation: "Head Of Section (Information Systems)",
+      designation: "Head Of IT",
       des: "Highly self-motivated Software Architect with the ability to be proactive in project execution. This includes 12+ years of experience and passion for software development and learning new technologies while empowering the team whith designing software system using agile software development. And participated, contributed, and provided leadership in multiple capacities to multiple technology and process transformations in software product and development over the years.",
       image:"/Samaraweera.png",
     },
@@ -382,7 +382,7 @@ export const navItems = [
     {
       id: 21,
       name: "K.D.B.N. Thilakarathne",
-      designation: "Trainee Software Engineer",
+      designation: "Associate Software Engineer (IOT)",
       des: "",
       image:"/Binura.png",
     },
@@ -403,68 +403,68 @@ export const navItems = [
     {
       id: 24,
       name: "S.K. Gamage",
-      designation: "Trainee Software Engineer",
+      designation: "Software Engineer",
       des: "",
       image: "/Gamage.png",
     },
     {
       id: 25,
       name: "Anumi Gunarathne",
-      designation: "Intern Software Engineer",
+      designation: "Associate Software Engineer(QA)",
       image:"/Anumi Gunarathna.png",
     },
     {
       id: 26,
       name: "Sachit Jayasundara",
-      designation: "Intern",
+      designation: "Associate Software Engineer",
       image:"/Sachith.png",
     },
     {
       id: 27,
       name: "Randeera Withanage",
-      designation: "Intern",
+      designation: "Associate Software Engineer",
       image:"/Randeera.png",
     },
     {
       id: 28,
       name: "Chenuka Kuruppu	",
-      designation: "Intern",
+      designation: "Associate Software Engineer",
       image:"/Chenuka.png",
     },
     {
       id: 29,
       name: "Yeran Fernando",
-      designation: "Intern",
+      designation: "Associate Software Engineer",
       image:"/Yeran.png",
     },
     {
       id: 30,
       name: "Kavindu Nimesh",
-      designation: "Intern",
+      designation: "Associate Software Engineer",
       image:"/nimesh.png",
     },
     {
       id: 31,
       name: "Umaya Nethmi",
-      designation: "Intern",
+      designation: "Associate Software Engineer",
       image:"/nethmi.png",
     },
     {
       id: 32,
       name: "Kushan Nalinka",
-      designation: "Intern",
+      designation: "Associate Software Engineer",
       image:"/Kushan.png",
     },
     {
       id: 33,
-      name: "Nuwani Nimesha",
-      designation: "Intern",
+      name: "Nuwani Maheesha",
+      designation: "Associate Software Engineer",
       image:"/Nuwani_1.png",
     },
     {
       id: 34,
       name: "Pamitha Pankaja",
-      designation: "Intern",
+      designation: "Associate Software Engineer",
       image:"/pamitha.png",
     },
     {
