@@ -17,7 +17,7 @@ export const navItems = [
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "flex items-center",
-      img: "/DSC_1.jpg", //changed
+      // img: "/DSC_1.jpg", //changed
       spareImg: "",
     },
     {
@@ -27,7 +27,7 @@ export const navItems = [
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "flex justify-center items-start",
-      img: "/girdImage_3.png",
+      // img: "/girdImage_3.png",
       spareImg: "",
     },
     {
@@ -37,7 +37,7 @@ export const navItems = [
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "w-200 h-full",
       titleClassName: "justify-center ",
-      img: "/technology_2.jpg",
+      // img: "/technology_2.jpg",
       spareImg: "",
     },
     {
@@ -46,8 +46,8 @@ export const navItems = [
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
-      titleClassName: "text-white flex justify-center items-center",
-      img: "/development.gif",
+      titleClassName: "flex justify-center items-center",
+      // img: "/development.gif",
       // spareImg: "/b4.svg",
     },
   
@@ -58,8 +58,8 @@ export const navItems = [
       className: "md:col-span-3 md:row-span-2",
       // imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       imgClassName: "absolute inset-0 m-auto w-full h-full object-contain",
-      titleClassName: "text-white flex justify-start md:justify-start lg:justify-start",
-      img: "/MockupView.png",
+      titleClassName: "flex justify-start md:justify-start lg:justify-start",
+      // img: "/MockupView.png",
       spareImg: "/grid.svg",
     },
     {
@@ -231,7 +231,7 @@ export const navItems = [
     {
       id: 6,
       name: "Lahiru Jayasinghe",
-      designation: "Intern Software Engineer",
+      designation: "Intern UI/UX Engineer",
       image:
         "/Loottaa.png",
     },
@@ -472,6 +472,13 @@ export const navItems = [
       name: "Duhithu Sakuni",
       designation: "QA Intern",
       image:"/Duhithu.png",
+    },
+    {
+      id: 36,
+      name: "Lahiru Jayasinghe",
+      designation: "Intern UI/UX Engineer",
+      image:
+        "/Loottaa.png",
     },
 
   ];

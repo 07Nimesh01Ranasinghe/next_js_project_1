@@ -166,25 +166,27 @@ export default function TeamPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
               <ExpandableCard idsToShow={[15]} />
               <ExpandableCard idsToShow={[19]} />
+              <ExpandableCard idsToShow={[21]} />
               <ExpandableCard idsToShow={[24]} />
-              <ExpandableCard idsToShow={[25]} />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
+              <ExpandableCard idsToShow={[25]} />
               <ExpandableCard idsToShow={[26]} />
               <ExpandableCard idsToShow={[27]} />
               <ExpandableCard idsToShow={[28]} />
-              <ExpandableCard idsToShow={[29]} />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
+              <ExpandableCard idsToShow={[29]} />
               <ExpandableCard idsToShow={[30]} />
               <ExpandableCard idsToShow={[31]} />
               <ExpandableCard idsToShow={[32]} />
-              <ExpandableCard idsToShow={[33]} />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
+            <ExpandableCard idsToShow={[36]} />
+              <ExpandableCard idsToShow={[33]} />
               <ExpandableCard idsToShow={[34]} />
               <ExpandableCard idsToShow={[35]} />
             </div>
