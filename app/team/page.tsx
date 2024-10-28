@@ -148,44 +148,51 @@ export default function TeamPage() {
               Meet our <span className="text-purple">amazing team</span>
             </h1>
 
+            <div className="w-1/3 max-w-1/3">
+              <ExpandableCard idsToShow={[1]} /> {/* Head of ICT */}
+            </div>
+
             {/* First Row: Head of ICT and Head of Section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 w-full max-w-xl">
-              <ExpandableCard idsToShow={[1]} /> {/* Head of ICT */}
-              <ExpandableCard idsToShow={[2]} /> {/* Head of Section */}
+              <ExpandableCard idsToShow={[2]} /> {/* Head of ICT */}
+              <ExpandableCard idsToShow={[23]} /> {/* Head of Section */}
             </div>
 
             {/* Second Row: Senior Software Engineers */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
-              <ExpandableCard idsToShow={[23]} />
               <ExpandableCard idsToShow={[5]} />
               <ExpandableCard idsToShow={[13]} />
               <ExpandableCard idsToShow={[14]} />
+              <ExpandableCard idsToShow={[15]} />
             </div>
 
             {/* Third Row: Systems Administrators */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
-              <ExpandableCard idsToShow={[15]} />
+              
               <ExpandableCard idsToShow={[19]} />
               <ExpandableCard idsToShow={[21]} />
               <ExpandableCard idsToShow={[24]} />
+              <ExpandableCard idsToShow={[25]} />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
-              <ExpandableCard idsToShow={[25]} />
+              
               <ExpandableCard idsToShow={[26]} />
               <ExpandableCard idsToShow={[27]} />
               <ExpandableCard idsToShow={[28]} />
+              <ExpandableCard idsToShow={[29]} />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
-              <ExpandableCard idsToShow={[29]} />
+              
               <ExpandableCard idsToShow={[30]} />
               <ExpandableCard idsToShow={[31]} />
               <ExpandableCard idsToShow={[32]} />
+              <ExpandableCard idsToShow={[36]} />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
-            <ExpandableCard idsToShow={[36]} />
+            
               <ExpandableCard idsToShow={[33]} />
               <ExpandableCard idsToShow={[34]} />
               <ExpandableCard idsToShow={[35]} />

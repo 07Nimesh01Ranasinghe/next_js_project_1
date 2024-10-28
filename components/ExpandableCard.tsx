@@ -460,7 +460,9 @@ export function ExpandableCard({ idsToShow }: ExpandableCardProps) {
                   height={500}
                   src={active.image || "/default-image.jpg"}
                   alt={active.name}
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                  // className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                  className="w-1/3 max-h-[300px] sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-center"
+
                 />
               </motion.div>
 
