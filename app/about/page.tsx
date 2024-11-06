@@ -149,7 +149,7 @@ export default function AboutPage() {
               {/* Logo with animation matching the navbar */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
+                animate={{ opacity: 1, x: 0, y: -17 }}
                 transition={{ duration: 0.3 }}
                 className="text-xl font-bold pl-4"
               >

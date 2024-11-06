@@ -67,7 +67,7 @@ export default function ProjectsPage() {
               {/* Logo with animation matching the navbar */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
+                animate={{ opacity: 1, x: 0, y: -17 }}
                 transition={{ duration: 0.3 }}
                 className="text-xl font-bold pl-4"
               >
@@ -80,7 +80,7 @@ export default function ProjectsPage() {
 
         {/* Careers Section */}
 
-        <div className="mt-20">
+        <div className="mt-10">
           {/* <StickyScrollRevealDemo/> */}
           <ProjectsList/>
           

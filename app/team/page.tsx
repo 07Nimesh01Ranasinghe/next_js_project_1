@@ -93,6 +93,15 @@ export default function TeamPage() {
       {
         threshold: 1.0,
       }
+      //   if (entry.isIntersecting) {
+      //     setLogoVisible(true);
+      //   } else {
+      //     setLogoVisible(false);
+      //   }
+      // },
+      // {
+      //   threshold: 1.0,
+      // }
     );
 
     observer.observe(heroSection);
@@ -117,6 +126,7 @@ export default function TeamPage() {
   return (
     <main className="relative dark:bg-black-100 bg-white flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
+      <FloatingNav navItems={navItems} />
         <AnimatePresence mode="wait">
           {logoVisible && (
             <motion.header
@@ -128,14 +138,14 @@ export default function TeamPage() {
               {/* Logo with animation matching the navbar */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
+                animate={{ opacity: 1, x: 0, y: -17 }}
                 transition={{ duration: 0.3 }}
                 className="text-xl font-bold pl-4"
               >
-                <span className="text-3xl text-black-100">Dockyard</span>
-                <span className="text-purple bg-p_glassy px-1 rounded">Software</span>
+                <span className="text-3xl text-black-100">DOCKYARD</span>
+                <span className="text-purple bg-p_glassy px-1 rounded">SOFTWARE</span>
               </motion.div>
-              <FloatingNav navItems={navItems} />
+              
             </motion.header>
           )}
         </AnimatePresence>

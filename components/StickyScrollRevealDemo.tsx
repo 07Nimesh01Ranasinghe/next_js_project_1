@@ -62,102 +62,102 @@
 
 
 
-"use client";
-import React from "react";
-import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
-import { allProjects } from "@/data/index"; // Adjust the import path as necessary
-import Image from 'next/image';
+// "use client";
+// import React from "react";
+// import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
+// import { allProjects } from "@/data/index"; // Adjust the import path as necessary
+// import Image from 'next/image';
 
-// Define background colors and gradients
-const backgroundColors = [
-  // "#ffebcd",
-  // "#8a2be2",
-  // "#5f9ea0",
-  // "#7fff00",
-  // "#d2691e",
-  // "#ff7f50",
-  // "#6495ed",
-  // "#dc143c",
-  // "#00ffff",
-  // "#00008b",
-  // "#008b8b",
-  // "#b8860b",
-  // "#a9a9a9",
-  // "#006400",
-  // "#bdb76b",
-  // "#8b008b",
-  // "#556b2f",
-  // "#ff8c00",
-  // "#9932cc",
-];
+// // Define background colors and gradients
+// const backgroundColors = [
+//   // "#ffebcd",
+//   // "#8a2be2",
+//   // "#5f9ea0",
+//   // "#7fff00",
+//   // "#d2691e",
+//   // "#ff7f50",
+//   // "#6495ed",
+//   // "#dc143c",
+//   // "#00ffff",
+//   // "#00008b",
+//   // "#008b8b",
+//   // "#b8860b",
+//   // "#a9a9a9",
+//   // "#006400",
+//   // "#bdb76b",
+//   // "#8b008b",
+//   // "#556b2f",
+//   // "#ff8c00",
+//   // "#9932cc",
+// ];
 
-const linearGradients = [
-  "linear-gradient(to bottom right, #ff7e5f, #feb47b)",
-  "linear-gradient(to bottom right, #6a11cb, #2575fc)",
-  "linear-gradient(to bottom right, #ff4e50, #f9d423)",
-  "linear-gradient(to bottom right, #00c6ff, #0072ff)",
-  "linear-gradient(to bottom right, #f7971e, #ffd200)",
-  "linear-gradient(to bottom right, #24c6dc, #514a9d)",
-  "linear-gradient(to bottom right, #de6161, #2657eb)",
-  "linear-gradient(to bottom right, #00b09b, #96c93d)",
-  "linear-gradient(to bottom right, #e44d26, #f16529)",
-  "linear-gradient(to bottom right, #b24592, #f15f79)",
-  "linear-gradient(to bottom right, #5f2c82, #49a09d)",
-  "linear-gradient(to bottom right, #2980b9, #6dd5fa)",
-  "linear-gradient(to bottom right, #56ab2f, #a8e063)",
-  "linear-gradient(to bottom right, #ff5f6d, #ffc371)",
-  "linear-gradient(to bottom right, #c94b4b, #4b134f)",
-  "linear-gradient(to bottom right, #d66d75, #e29587)",
-  "linear-gradient(to bottom right, #200122, #6f0000)",
-  "linear-gradient(to bottom right, #0f2027, #203a43, #2c5364)",
-  "linear-gradient(to bottom right, #355c7d, #6c5b7b, #c06c84)",
-];
+// const linearGradients = [
+//   "linear-gradient(to bottom right, #ff7e5f, #feb47b)",
+//   "linear-gradient(to bottom right, #6a11cb, #2575fc)",
+//   "linear-gradient(to bottom right, #ff4e50, #f9d423)",
+//   "linear-gradient(to bottom right, #00c6ff, #0072ff)",
+//   "linear-gradient(to bottom right, #f7971e, #ffd200)",
+//   "linear-gradient(to bottom right, #24c6dc, #514a9d)",
+//   "linear-gradient(to bottom right, #de6161, #2657eb)",
+//   "linear-gradient(to bottom right, #00b09b, #96c93d)",
+//   "linear-gradient(to bottom right, #e44d26, #f16529)",
+//   "linear-gradient(to bottom right, #b24592, #f15f79)",
+//   "linear-gradient(to bottom right, #5f2c82, #49a09d)",
+//   "linear-gradient(to bottom right, #2980b9, #6dd5fa)",
+//   "linear-gradient(to bottom right, #56ab2f, #a8e063)",
+//   "linear-gradient(to bottom right, #ff5f6d, #ffc371)",
+//   "linear-gradient(to bottom right, #c94b4b, #4b134f)",
+//   "linear-gradient(to bottom right, #d66d75, #e29587)",
+//   "linear-gradient(to bottom right, #200122, #6f0000)",
+//   "linear-gradient(to bottom right, #0f2027, #203a43, #2c5364)",
+//   "linear-gradient(to bottom right, #355c7d, #6c5b7b, #c06c84)",
+// ];
 
-// Map your project data to the content array
-const content = allProjects.map((project) => ({
-  title: project.title,
-  description: [
-    project.des1,
-    project.des2,
-    project.des3,
-    project.des4,
-    project.des5,
-    project.des6,
-    project.des7,
-    project.des8,
-  ]
-    .filter(Boolean)
-    .join("\n\n"), // Use double line breaks for better readability
-  content: (
-    <div className="flex flex-wrap items-center justify-center space-x-2 p-4">
-      {project.icon.map((iconItem) => {
-        const iconSrc = iconItem.img;
-        return (
-          <Image
-            key={iconItem.id}
-            src={iconSrc}
-            alt="Technology Icon"
-            width={30}
-            height={30}
-            className="w-12 h-12"
-          />
-        );
-      })}
-    </div>
-  ),
-}));
+// // Map your project data to the content array
+// const content = allProjects.map((project) => ({
+//   title: project.title,
+//   description: [
+//     project.des1,
+//     project.des2,
+//     project.des3,
+//     project.des4,
+//     project.des5,
+//     project.des6,
+//     project.des7,
+//     project.des8,
+//   ]
+//     .filter(Boolean)
+//     .join("\n\n"), // Use double line breaks for better readability
+//   content: (
+//     <div className="flex flex-wrap items-center justify-center space-x-2 p-4">
+//       {project.icon.map((iconItem) => {
+//         const iconSrc = iconItem.img;
+//         return (
+//           <Image
+//             key={iconItem.id}
+//             src={iconSrc}
+//             alt="Technology Icon"
+//             width={30}
+//             height={30}
+//             className="w-12 h-12"
+//           />
+//         );
+//       })}
+//     </div>
+//   ),
+// }));
 
-export function StickyScrollRevealDemo() {
-  return (
-    <div className="p-10">
-      <StickyScroll
-        content={content}
-        // backgroundColors={backgroundColors}
-        backgroundColors= {["#ffffff"]}
-        linearGradients={linearGradients}
-      />
-    </div>
-  );
-}
+// export function StickyScrollRevealDemo() {
+//   return (
+//     <div className="p-10">
+//       <StickyScroll
+//         content={content}
+//         // backgroundColors={backgroundColors}
+//         backgroundColors= {["#ffffff"]}
+//         linearGradients={linearGradients}
+//       />
+//     </div>
+//   );
+// }
 
-export default StickyScrollRevealDemo;
+// export default StickyScrollRevealDemo;

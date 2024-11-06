@@ -60,7 +60,7 @@ export const navItems = [
       // imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       imgClassName: "absolute inset-0 m-auto w-full h-full object-contain",
       titleClassName: "flex justify-start md:justify-start lg:justify-start",
-      // img: "/MockupView.png",
+      img: "/new rcc.png",
       spareImg: "/grid.svg",
     },
     {
@@ -136,11 +136,31 @@ export const navItems = [
           img: "/icons8-microsoft-sql-server.svg",
         },
       ],
-      tech: [
+      bgIcon: [
         {
           id:1,
-
-        }
+          img: "/facial.png",
+          top: '15%',
+          left: '20%',
+        },
+        {
+          id:2,
+          img: "/hair-cutting.png",
+          top: '20%',
+          left: '90%',
+        },
+        {
+          id:3,
+          img: "/makeup.png",
+          top: '70%',
+          left: '10%',
+        },
+        {
+          id:4,
+          img: "/manicure.png",
+          top: '80%',
+          left: '80%',
+        },
       ],
     },
     {
@@ -163,6 +183,33 @@ export const navItems = [
           img: "/icons8-spring-boot.svg",
         },
       ],
+      bgIcon: [
+        {
+          id:1,
+          img: "/car.png",
+          top: '15%',
+          left: '15%',
+        },
+        {
+          id:2,
+          img: "/car-service.png",
+          top: '20%',
+          left: '85%',
+        },
+        {
+          id:3,
+          img: "/car-wash.png",
+          top: '70%',
+          left: '10%',
+        },
+        {
+          id:4,
+          img: "/checklist.png",
+          top: '80%',
+          left: '80%',
+        },
+      ],
+      
       
     },
     {
@@ -187,6 +234,32 @@ export const navItems = [
         {
           id:3,
           img: "/icons8-my-sql.svg ",
+        },
+      ],
+      bgIcon: [
+        {
+          id:1,
+          img: "/car.png",
+          top: '15%',
+          left: '5%',
+        },
+        {
+          id:2,
+          img: "/car-service.png",
+          top: '20%',
+          left: '85%',
+        },
+        {
+          id:3,
+          img: "/car-wash.png",
+          top: '70%',
+          left: '10%',
+        },
+        {
+          id:4,
+          img: "/checklist.png",
+          top: '80%',
+          left: '80%',
         },
       ],
     },
@@ -1066,8 +1139,8 @@ export const navItems = [
   export const socialMedia = [
     {
       id: 1,
-      img: "/twitterPurple.svg",
-      url: "https://x.com/homex_nft?lang=en"
+      img: "/whatsapp.png",
+      url: "https://wa.me/94776970808"
       
     },
     {
