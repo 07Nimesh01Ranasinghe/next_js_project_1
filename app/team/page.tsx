@@ -171,41 +171,41 @@ export default function TeamPage() {
             {/* Second Row: Senior Software Engineers */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
               <ExpandableCard idsToShow={[5]} />
-              <ExpandableCard idsToShow={[13]} />
               <ExpandableCard idsToShow={[14]} />
               <ExpandableCard idsToShow={[15]} />
+              <ExpandableCard idsToShow={[19]} />
             </div>
 
             {/* Third Row: Systems Administrators */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
               
-              <ExpandableCard idsToShow={[19]} />
-              <ExpandableCard idsToShow={[21]} />
               <ExpandableCard idsToShow={[24]} />
+              <ExpandableCard idsToShow={[21]} />
               <ExpandableCard idsToShow={[25]} />
+              <ExpandableCard idsToShow={[26]} />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
               
-              <ExpandableCard idsToShow={[26]} />
               <ExpandableCard idsToShow={[27]} />
               <ExpandableCard idsToShow={[28]} />
               <ExpandableCard idsToShow={[29]} />
+              <ExpandableCard idsToShow={[30]} />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
               
-              <ExpandableCard idsToShow={[30]} />
               <ExpandableCard idsToShow={[31]} />
               <ExpandableCard idsToShow={[32]} />
               <ExpandableCard idsToShow={[36]} />
+              <ExpandableCard idsToShow={[33]} />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
             
-              <ExpandableCard idsToShow={[33]} />
               <ExpandableCard idsToShow={[34]} />
               <ExpandableCard idsToShow={[35]} />
+              
             </div>
 
           </section>

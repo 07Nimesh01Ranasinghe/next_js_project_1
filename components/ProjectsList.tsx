@@ -291,6 +291,7 @@ const ProjectsList: FC = () => {
 
             {/* Project Title */}
             <h1 className="text-black-100 text-4xl font-bold text-center mb-5 lg:text-5xl">{project.title}</h1>
+            <h3 className="text-sm text-center my-5">{project.secondTitle}</h3>
 
             {/* Descriptions */}
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -305,7 +306,7 @@ const ProjectsList: FC = () => {
             </div>
 
             {/* Technology Icons */}
-            <div className="mt-8 flex space-x-4">
+            <div className="mt-8 flex space-x-4 py-3 px-5 border  rounded-lg shadow-md">
               {project.icon.map((icon, index) => (
                 <motion.div
                   key={icon.id}
@@ -314,10 +315,10 @@ const ProjectsList: FC = () => {
                 >
                   <Image
                     src={icon.img}
-                    width={50}
-                    height={50}
+                    width={40}
+                    height={40}
                     alt="Technology Icon"
-                    className="lg:h-16 lg:w-16 "
+                    // className="lg:h-16 lg:w-16 "
                   />
                 </motion.div>
               ))}

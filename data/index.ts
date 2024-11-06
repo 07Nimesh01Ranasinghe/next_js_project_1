@@ -78,33 +78,33 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "Car Attendance System",
+      title: "Weehena Farm - Inventory", //Inventory Management System
       des: "Struggling to manage vehicle attendance? Get real-time tracking and comprehensive reports effortlessly!",
-      img: "/CarAttendance2.png",
+      img: "/salon_1.jpg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "https://github.com/",
     },
     {
       id: 2,
-      title: "Fleet Tracking System",
+      title: "NOC OPS System",
       des: "Struggling to track your fleet? Get real-time updates and comprehensive reports effortlessly",
-      img: "/FleetTracking2.png",
+      img: "/rcc_1.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "https://github.com/",
     },
     {
       id: 3,
-      title: "DOCCAFE",
+      title: "E Supplier",
       des: "You want a eligant web application? for your business. Contact with us and enhance your business...",
-      img: "/DocCafeBreak.png",
+      img: "/rcc_3.jpg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
       link: "https://github.com/",
     },
     {
       id: 4,
-      title: "Car Shop",
+      title: "Richmand College Cricket",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/Carshop2.png",
+      img: "/rcc_2.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "https://github.com/",
     },
@@ -114,6 +114,7 @@ export const navItems = [
     {
       id: 1,
       title: "Salon Appointment Management System",
+      secondTitle: "A comprehensive solution that streamlines salon operations by facilitating appointment scheduling, client and staff management, service listings with pricing, automated reminders, integrated payment processing, and insightful reporting and analytics on sales and customer satisfaction.",
       des1: "Appointment Scheduling: Book, modify, and cancel appointments.",
       des2: "Client Management: Store client profiles with history and preferences.",
       des3: "Staff Management: Assign staff, manage schedules, and track performance.",
@@ -140,7 +141,7 @@ export const navItems = [
         {
           id:1,
           img: "/facial.png",
-          top: '15%',
+          top: '10%',
           left: '20%',
         },
         {
@@ -152,7 +153,7 @@ export const navItems = [
         {
           id:3,
           img: "/makeup.png",
-          top: '70%',
+          top: '75%',
           left: '10%',
         },
         {
@@ -742,7 +743,7 @@ export const navItems = [
   export const people = [
     {
       id: 1,
-      name: "W.Lakmali",
+      name: "Lakmali",
       designation: "Senior Software Engineer",
       image:
         "/lakmali.png",
@@ -756,24 +757,24 @@ export const navItems = [
     // },
     {
       id: 2,
-      name: "S.A.N.R Gunasekara",
+      name: "Nirmitha",
       designation: "IOT Software Engineer",
       image:
         "/Nirmitha.png",
     },
     {
       id: 3,
-      name: "R.A.N.P. Perara",
+      name: "Indunil",
       designation: "Software Engineer",
       des: "",
-      image:"/nilusha.png",
+      image:"/Yapa.png",
     },
     {
       id: 4,
-      name: "Lahiru Jayasinghe",
-      designation: "Associate UI/UX Engineer",
-      image:
-        "/Loottaa.png",
+      name: "Kusal",
+      designation: "Software Engineer",
+      des: "",
+      image: "/Gamage.png",
     },
     {
       id: 5,
@@ -782,12 +783,13 @@ export const navItems = [
       image:
         "/nimesh.png",
     },
+    
     {
       id: 6,
-      name: "S.K. Gamage",
-      designation: "Software Engineer",
-      des: "",
-      image: "/Gamage.png",
+      name: "Lahiru",
+      designation: "Associate UI/UX Engineer",
+      image:
+        "/Loottaa.png",
     },
   ];
 
@@ -952,7 +954,7 @@ export const navItems = [
       name: "Rajitha Rajapaksha",
       designation: "Head Of Section",
       des: "Experienced ICT leader with over 34 years in the industry, driving technological excellence and innovation. Proven track record of implementing cutting-edge solutions, optimizing IT infrastructure, and leading high-performing teams. A visionary strategist adept at aligning technology with business goals to achieve operational efficiency and competitive advantage.",
-      image:"/Rajitha.png",
+      image:"/rajith.png",
     },
     {
       id: 24,
@@ -964,7 +966,7 @@ export const navItems = [
     {
       id: 25,
       name: "Anumi Gunarathne",
-      designation: "Associate Software Engineer(QA)",
+      designation: "Associate Software Engineer",
       image:"/Anumi Gunarathna.png",
     },
     {

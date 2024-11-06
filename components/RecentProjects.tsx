@@ -89,7 +89,7 @@
 
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
+
 import Image from "next/image";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
@@ -102,11 +102,11 @@ const RecentProjects = () => {
       </h1>
 
       {/* Flex container for the cards */}
-      <div className="flex flex-wrap justify-between p-4 gap-x-6 mt-48 mb-10 lg:gap-x-8">
+      <div className="flex flex-wrap justify-start p-4 gap-6 mt-48 mb-10 lg:gap-x-2">
         {projects.map((item) => (
           <div
             key={item.id}
-            className="w-[100%] sm:w-[48%] lg:w-[23%] flex items-center justify-center h-[250px]" // Updated for 4 cards to fit in the view
+            className="w-full sm:w-1/2 lg:w-1/5 flex flex-col items-center justify-start" // Updated for 4 cards to fit in the view
           >
             <PinContainer title="Visit" href={item.link || "https://twitter.com/mannupaaji"}>
               <div className="relative flex items-center justify-center w-full overflow-hidden h-[250px] mb-10">
@@ -119,11 +119,11 @@ const RecentProjects = () => {
                 />
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              <h1 className="text-gray-600 font-bold lg:text-xl md:text-xl text-base line-clamp-1">
                 {item.title}
               </h1>
 
-              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 text-[#BEC1DD] my-1">
+              <p className="lg:text-sm lg:font-normal font-light text-sm line-clamp-2 text-[#9ea4da] my-1">
                 {item.des}
               </p>
 
@@ -143,10 +143,10 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                  {/* <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                     Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  </p> */}
+                  {/* <FaLocationArrow className="ms-3" color="#CBACF9" /> */}
                 </div>
               </div>
             </PinContainer>
