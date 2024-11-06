@@ -5,7 +5,9 @@ import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Footer from "@/components/Footer";
 import { navItems } from "@/data";
-import { StickyScrollRevealDemo } from "@/components/StickyScrollRevealDemo";
+// import { StickyScrollRevealDemo } from "@/components/StickyScrollRevealDemo";
+import ProjectsList from "@/components/ProjectsList";
+
 
 export default function ProjectsPage() {
   const { scrollYProgress } = useScroll();
@@ -78,7 +80,11 @@ export default function ProjectsPage() {
 
         {/* Careers Section */}
 
-        <StickyScrollRevealDemo/>
+        <div className="mt-20">
+          {/* <StickyScrollRevealDemo/> */}
+          <ProjectsList/>
+          
+        </div>
         
 
         {/* Footer */}

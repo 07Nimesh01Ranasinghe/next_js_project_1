@@ -4,6 +4,7 @@ export const navItems = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Projects", link: "/projects" },
+    { name: "Team", link: "/team" },
     // { name: "Testimonials", link: "/testimonials" },
     { name: "Careers", link: "/careers" },
     { name: "Contact", link: "/contact" },
@@ -121,6 +122,26 @@ export const navItems = [
       des6: "Payment Integration: Accept multiple payment methods (cash, card, online)",
       des7: "Reporting & Analytics: Sales, appointments, and customer satisfaction.",
       img: "/CarAttendance2.png",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
+      tech: [
+        {
+          id:1,
+
+        }
+      ],
     },
     {
       id: 2,
@@ -132,7 +153,17 @@ export const navItems = [
       des5: "Customer Management: Store customer and vehicle details.",
       des6: "Job Cards: Track mechanic assignments and work progress.",
       des7: "Notifications: Service completion and maintenance reminders.",
-      img: "/CarAttendance2.png",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-spring-boot.svg",
+        },
+      ],
+      
     },
     {
       id: 3,
@@ -144,6 +175,20 @@ export const navItems = [
       des5: "Payment Integration: Multiple payment options and invoicing.",
       des6: "Contract Management: Digital rental agreements with e-signatures.",
       des7: "Notifications: Reminders for vehicle return and payment due.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-spring-boot.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-my-sql.svg ",
+        },
+      ],
     },
     {
       id: 4,
@@ -155,6 +200,24 @@ export const navItems = [
       des5: "Integration with Banks: Automatic bank statement imports.",
       des6: "Expense Split: Shared expense management for families or teams.",
       des7: "Notifications: Alerts for overspending or upcoming bills.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-spring-boot.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-my-sql.svg",
+        },
+        {
+          id:4,
+          img: "/icons8-tailwindcss.svg",
+        },
+      ],
     },
     {
       id: 5,
@@ -166,6 +229,20 @@ export const navItems = [
       des5: "Payment Tracking: Monitor paid, unpaid, and overdue invoices.",
       des6: "Multi-Currency Invoicing: Support for international transactions.",
       des7: "Reporting & Analytics: Sales, revenue, and client analysis.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 6,
@@ -177,6 +254,20 @@ export const navItems = [
       des5: "Table Reservations: Allow customers to reserve tables.",
       des6: "Employee Management: Staff scheduling, performance, and tips tracking.",
       des7: "Reports: Daily sales, popular dishes, and stock analysis.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 7,
@@ -187,6 +278,20 @@ export const navItems = [
       des4: "Stat Tracking: Detailed player and team performance tracking.",
       des5: "Notifications: Match reminders, results, and announcements.",
       des6: "Reports: Match performance, individual stats, and win/loss records.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 8,
@@ -198,6 +303,20 @@ export const navItems = [
       des5: "Custom Forms: Contact, lead generation, or service request forms.",
       des6: "Analytics Integration: Google Analytics and tracking tools.",
       des7: "Security: SSL certificates, data encryption, and secure login.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 9,
@@ -209,6 +328,20 @@ export const navItems = [
       des5: "Notifications: Alerts for classes, fees, and updates.",
       des6: "Assessment: Track test results, grades, and progress.",
       des7: "Reports: Attendance, fee collection, and performance reports.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 10,
@@ -220,6 +353,20 @@ export const navItems = [
       des5: "Inventory Reports: Track stock movements and overstocking.",
       des6: "Barcode Scanning: Fast data entry with barcode support.",
       des7: "Multi-location Support: Manage inventory across locations.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 11,
@@ -231,6 +378,20 @@ export const navItems = [
       des5: "Purchasing: Track purchase orders and supplier management.",
       des6: "Reporting: Real-time business performance and KPIs.",
       des7: "Customization: Tailored modules for specific needs.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 12,
@@ -241,6 +402,20 @@ export const navItems = [
       des4: "Performance Metrics: Analyze network performance and uptime.",
       des5: "Reporting: Detailed system performance and resolutions.",
       des6: "Integration: With ticketing and IT service management tools.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 13,
@@ -251,6 +426,20 @@ export const navItems = [
       des4: "Knowledge Base: FAQs and guides for common problems.",
       des5: "SLA Management: Track service level agreements.",
       des6: "Reporting: Resolution times and customer satisfaction.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 14,
@@ -262,6 +451,20 @@ export const navItems = [
       des5: "Collaboration: Multiple users collaborate on documents.",
       des6: "Integration: With CRM, ERP, or file storage solutions.",
       des7: "Audit Trails: Track who accessed or edited documents.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 15,
@@ -272,6 +475,20 @@ export const navItems = [
       des4: "Shift Scheduling: Create and manage employee shifts.",
       des5: "Overtime Tracking: Calculate overtime hours automatically.",
       des6: "Reports: Attendance, punctuality, and overtime reports.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 16,
@@ -282,6 +499,20 @@ export const navItems = [
       des4: "Reports: Entry/exit logs and access violations.",
       des5: "Integration: With security cameras and surveillance.",
       des6: "Alerts: Notifications for unauthorized access.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 17,
@@ -292,6 +523,20 @@ export const navItems = [
       des4: "Interview Scheduling: Schedule interviews and feedback.",
       des5: "Onboarding: Track onboarding processes for successful candidates.",
       des6: "Reports: Recruitment metrics like time to hire, applications per job",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 18,
@@ -302,6 +547,20 @@ export const navItems = [
       des4: "Leave Integration: Link leave data to payroll.",
       des5: "Payslips: Generate and distribute digital payslips.",
       des6: "Reporting: Payroll summaries and tax reports.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
     {
       id: 19,
@@ -314,6 +573,20 @@ export const navItems = [
       des6: "Lab Test Management: Track lab orders and results.",
       des7: "Inventory Management: Manage supplies and restocking alerts.",
       des8: "Doctor and Staff Management: Track doctor schedules, patient loads, and performance analytics.",
+      icon: [
+        {
+          id:1,
+          img:"/re.svg" ,
+        },
+        {
+          id:2,
+          img: "/icons8-.net.svg",
+        },
+        {
+          id:3,
+          img: "/icons8-microsoft-sql-server.svg",
+        },
+      ],
     },
   ];
 
@@ -326,15 +599,15 @@ export const navItems = [
     },
     {
       id: 2,
-      image: "/DSC_9447 copy.jpg", // Replace with actual image path
+      image: "/DSC_9447.jpg", // Replace with actual image path
     },
     {
       id: 3,
-      image: "/DSC_9641 copy.jpg", // Replace with actual image path
+      image: "/DSC_9641.jpg", // Replace with actual image path
     },
     {
       id: 4,
-      image: "/DSC_9495 copy.jpg", // Replace with actual image path
+      image: "/DSC_9495.jpg", // Replace with actual image path
     },
   ];
 
@@ -425,7 +698,7 @@ export const navItems = [
     {
       id: 4,
       name: "Lahiru Jayasinghe",
-      designation: "Intern UI/UX Engineer",
+      designation: "Associate UI/UX Engineer",
       image:
         "/Loottaa.png",
     },
@@ -478,7 +751,7 @@ export const navItems = [
     {
       id: 5,
       name: "K.V.L. Chathuranga",
-      designation: "Senior Software Engineer",
+      designation: "Lead Software Engineer",
       des: "Highly self-motivated Software Architect with the ability to be proactive in project execution. This includes 12+ years of experience and passion for software development and learning new technologies while empowering the team whith designing software system using agile software development. And participated, contributed, and provided leadership in multiple capacities to multiple technology and process transformations in software product and development over the years.",
       image:"/chathuranga.png",
     },
@@ -678,13 +951,13 @@ export const navItems = [
     {
       id: 35,
       name: "Duhithu Sakuni",
-      designation: "QA Intern",
+      designation: "Associate Software Engineer (QA)",
       image:"/Duhithu.png",
     },
     {
       id: 36,
       name: "Lahiru Jayasinghe",
-      designation: "Intern UI/UX Engineer",
+      designation: "Associate UI/UX Engineer",
       image:
         "/Loottaa.png",
     },
