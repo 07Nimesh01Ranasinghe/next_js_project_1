@@ -546,7 +546,7 @@ const Card: React.FC<CardProps> = ({ title, imageSrc, children, des }) => {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-p-500 group/canvas-card flex items-center justify-center dark:border-white/[0.2] w-full mx-auto p-2 relative h-[20rem] rounded-xl"
+      className="border border-p-500 group/canvas-card flex items-center justify-center dark:border-white/[0.2] w-full mx-auto p-2 relative h-[15rem] rounded-xl"
       style={{
         background: "rgba(255, 255, 255, 0.8)", // Card background
       }}

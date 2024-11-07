@@ -451,9 +451,9 @@ export function ExpandableCard({ idsToShow }: ExpandableCardProps) {
             <motion.div
               layoutId={`card-${active.name}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden items-center"
             >
-              <motion.div layoutId={`image-${active.name}-${id}`} className="aspect-w-4 aspect-h-3">
+              <motion.div layoutId={`image-${active.name}-${id}`} className="w-full flex justify-center">
                 <Image
                   priority
                   width={500}
@@ -461,7 +461,7 @@ export function ExpandableCard({ idsToShow }: ExpandableCardProps) {
                   src={active.image || "/default-image.jpg"}
                   alt={active.name}
                   // className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
-                  className="w-1/3 max-h-[300px] sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-center"
+                  className="w-1/3 h-auto sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-center"
 
                 />
               </motion.div>
@@ -508,25 +508,25 @@ export function ExpandableCard({ idsToShow }: ExpandableCardProps) {
             className="p-4 flex flex-col hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col w-full">
-              <motion.div layoutId={`image-${member.name}-${id}`} className="aspect-w-4 aspect-h-3">
+              <motion.div layoutId={`image-${member.name}-${id}`} className="w-full h-64 overflow-hidden">
                 <Image
                   width={500}
                   height={500}
                   src={member.image || "/default-image.jpg"}
                   alt={member.name}
-                  className="h-full w-full object-cover rounded-lg"
+                  className="h-[90%] w-full object-cover rounded-lg"
                 />
               </motion.div>
               <div className="flex justify-center items-center flex-col">
                 <motion.h3
                   layoutId={`title-${member.name}-${id}`}
-                  className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left text-base"
+                  className="font-medium text-neutral-800 dark:text-neutral-200 text-center  text-base"
                 >
                   {member.name}
                 </motion.h3>
                 <motion.p
                   layoutId={`designation-${member.designation}-${id}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"
+                  className="text-neutral-600 dark:text-neutral-400 text-center text-sm"
                 >
                   {member.designation}
                 </motion.p>

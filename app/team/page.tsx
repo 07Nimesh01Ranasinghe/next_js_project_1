@@ -152,60 +152,62 @@ export default function TeamPage() {
 
         <TracingBeam px-8>
           {/* Team Details Section */}
-          <section className="flex flex-col items-center justify-center w-full min-h-screen gap-12 mt-20 py-16" ref={heroRef}>
+          <section className="flex flex-col items-center justify-center w-full min-h-screen gap-10 mt-20 py-16" ref={heroRef}>
             {/* Team Details Heading */}
             <h1 className="text-4xl font-bold mb-8">
               Meet our <span className="text-purple">amazing team</span>
             </h1>
 
-            <div className="w-1/3 max-w-1/3">
+            <div className="w-1/4 max-w-1/3">
               <ExpandableCard idsToShow={[1]} /> {/* Head of ICT */}
             </div>
 
             {/* First Row: Head of ICT and Head of Section */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 w-full max-w-xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 w-1/2 max-w-xl">
               <ExpandableCard idsToShow={[2]} /> {/* Head of ICT */}
               <ExpandableCard idsToShow={[23]} /> {/* Head of Section */}
             </div>
 
             {/* Second Row: Senior Software Engineers */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[70%] max-w-3xl">
               <ExpandableCard idsToShow={[5]} />
-              <ExpandableCard idsToShow={[14]} />
+              <ExpandableCard idsToShow={[13]} />
               <ExpandableCard idsToShow={[15]} />
-              <ExpandableCard idsToShow={[19]} />
+              
             </div>
 
             {/* Third Row: Systems Administrators */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
-              
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[70%] max-w-3xl">
+            <ExpandableCard idsToShow={[19]} />
               <ExpandableCard idsToShow={[24]} />
               <ExpandableCard idsToShow={[21]} />
-              <ExpandableCard idsToShow={[25]} />
-              <ExpandableCard idsToShow={[26]} />
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
-              
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[70%] max-w-3xl">
+              <ExpandableCard idsToShow={[25]} />
+              <ExpandableCard idsToShow={[26]} />
               <ExpandableCard idsToShow={[27]} />
+              
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[70%] max-w-3xl">
               <ExpandableCard idsToShow={[28]} />
               <ExpandableCard idsToShow={[29]} />
               <ExpandableCard idsToShow={[30]} />
+              
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
-              
-              <ExpandableCard idsToShow={[31]} />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[70%] max-w-3xl">
+            
+             <ExpandableCard idsToShow={[31]} />
               <ExpandableCard idsToShow={[32]} />
               <ExpandableCard idsToShow={[36]} />
-              <ExpandableCard idsToShow={[33]} />
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-3xl">
-            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[70%] max-w-3xl">
+              <ExpandableCard idsToShow={[33]} />
               <ExpandableCard idsToShow={[34]} />
               <ExpandableCard idsToShow={[35]} />
-              
             </div>
 
           </section>

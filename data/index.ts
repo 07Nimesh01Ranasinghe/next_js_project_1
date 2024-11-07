@@ -80,7 +80,7 @@ export const navItems = [
       id: 1,
       title: "Weehena Farm - Inventory", //Inventory Management System
       des: "Struggling to manage vehicle attendance? Get real-time tracking and comprehensive reports effortlessly!",
-      img: "/salon_1.jpg",
+      img: "/weehena.jpg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "https://github.com/",
     },
@@ -104,7 +104,7 @@ export const navItems = [
       id: 4,
       title: "Richmand College Cricket",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/rcc_2.jpg",
+      img: "/rcc_1.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "https://github.com/",
     },
@@ -1259,7 +1259,7 @@ export const navItems = [
     },
     {
       id: 5,
-      name: "K.V.L. Chathuranga",
+      name: "Lahiru Chathuranga",      //K.V.L. Chathuranga
       designation: "Lead Software Engineer",
       des: "Highly self-motivated Software Architect with the ability to be proactive in project execution. This includes 12+ years of experience and passion for software development and learning new technologies while empowering the team whith designing software system using agile software development. And participated, contributed, and provided leadership in multiple capacities to multiple technology and process transformations in software product and development over the years.",
       image:"/chathuranga.png",
@@ -1329,7 +1329,7 @@ export const navItems = [
     },
     {
       id: 15,
-      name: "S.A.N.R. Gunasekara",
+      name: "Nirmitha Gunasekara",  //S.A.N.R. Gunasekara
       designation: "IOT Software Engineer",
       des: "",
       image:"/Nirmitha.png",
@@ -1357,7 +1357,7 @@ export const navItems = [
     },
     {
       id: 19,
-      name: "Y.A.D.I. Yapa",
+      name: "Idunil Yapa", //Y.A.D.I. Yapa
       designation: "Software Engineer",
       des: "",
       image:"/Yapa.png",
@@ -1371,7 +1371,7 @@ export const navItems = [
     },
     {
       id: 21,
-      name: "K.D.B.N. Thilakarathne",
+      name: "Binura Thilakarathne", //K.D.B.N. Thilakarathne
       designation: "Associate Software Engineer (IOT)",
       des: "",
       image:"/Binura.png",
@@ -1392,7 +1392,7 @@ export const navItems = [
     },
     {
       id: 24,
-      name: "S.K. Gamage",
+      name: "Kusal Gamage", //S.K. Gamage
       designation: "Software Engineer",
       des: "",
       image: "/Gamage.png",
