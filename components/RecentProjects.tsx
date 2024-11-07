@@ -102,7 +102,7 @@ const RecentProjects = () => {
       </h1>
 
       {/* Flex container for the cards */}
-      <div className="flex flex-wrap justify-start p-4 gap-6 mt-48 mb-10 lg:gap-x-2">
+      <div className="flex flex-wrap justify-center p-4 gap-6 mt-28 mb-10 lg:gap-x-2">
         {projects.map((item) => (
           <div
             key={item.id}
