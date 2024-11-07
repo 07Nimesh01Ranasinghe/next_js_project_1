@@ -5,7 +5,6 @@ export const navItems = [
     { name: "About", link: "/about" },
     { name: "Projects", link: "/projects" },
     { name: "Team", link: "/team" },
-    // { name: "Testimonials", link: "/testimonials" },
     { name: "Careers", link: "/careers" },
     { name: "Contact", link: "/contact" },
   ];
@@ -79,7 +78,7 @@ export const navItems = [
     {
       id: 1,
       title: "Weehena Farm - Inventory", //Inventory Management System
-      des: "Struggling to manage vehicle attendance? Get real-time tracking and comprehensive reports effortlessly!",
+      des: "Need a robust inventory management solution with real-time tracking, low-stock alerts, and multi-location support?",
       img: "/weehena.jpg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "https://github.com/",
@@ -87,23 +86,23 @@ export const navItems = [
     {
       id: 2,
       title: "NOC OPS System",
-      des: "Struggling to track your fleet? Get real-time updates and comprehensive reports effortlessly",
-      img: "/rcc_1.jpg",
+      des: "Looking to enhance your network operations center with real-time monitoring, incident tracking, and integrated alerts?",
+      img: "/NOCOPS.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "https://github.com/",
     },
     {
       id: 3,
       title: "E Supplier",
-      des: "You want a eligant web application? for your business. Contact with us and enhance your business...",
-      img: "/rcc_3.jpg",
+      des: "Want a customized ERP solution to streamline your small business's finances, inventory, and customer management?",
+      img: "/ESuplier.jpg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
       link: "https://github.com/",
     },
     {
       id: 4,
       title: "Richmand College Cricket",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      des: "Ready to elevate your school cricket program with a system for player tracking, match scheduling, and performance insights?",
       img: "/rcc_1.jpg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "https://github.com/",
@@ -184,6 +183,10 @@ export const navItems = [
           id:2,
           img: "/icons8-spring-boot.svg",
         },
+        {
+          id:3,
+          img: "/icons8-my-sql.svg",
+        },
       ],
       bgIcon: [
         {
@@ -232,11 +235,11 @@ export const navItems = [
         },
         {
           id:2,
-          img: "/icons8-spring-boot.svg",
+          img: "/CSS3.svg",
         },
         {
           id:3,
-          img: "/icons8-my-sql.svg ",
+          img: "/icons8-microsoft-sql-server.svg",
         },
       ],
       bgIcon: [
@@ -288,7 +291,7 @@ export const navItems = [
         },
         {
           id:3,
-          img: "/icons8-my-sql.svg",
+          img: "/MongoDB.svg",
         },
         {
           id:4,
@@ -392,11 +395,11 @@ export const navItems = [
         },
         {
           id:2,
-          img: "/icons8-.net.svg",
+          img: "/MongoDB.svg",
         },
         {
           id:3,
-          img: "/icons8-microsoft-sql-server.svg",
+          img: "/Tailwind CSS.svg",
         },
       ],
       bgIcon: [
@@ -443,11 +446,19 @@ export const navItems = [
         },
         {
           id:2,
-          img: "/icons8-.net.svg",
+          img: "/Tailwind CSS.svg",
         },
         {
           id:3,
-          img: "/icons8-microsoft-sql-server.svg",
+          img: "/icons8-my-sql.svg",
+        },
+        {
+          id:4,
+          img: "/Figma.svg",
+        },
+        {
+          id:5,
+          img: "/icons8-spring-boot.svg",
         },
       ],
       bgIcon: [
@@ -495,11 +506,15 @@ export const navItems = [
         },
         {
           id:2,
-          img: "/icons8-.net.svg",
+          img: "/Tailwind CSS.svg",
         },
         {
           id:3,
-          img: "/icons8-microsoft-sql-server.svg",
+          img: "/TypeScript.svg",
+        },
+        {
+          id:4,
+          img: "/Next.js.svg",
         },
       ],
       bgIcon: [
@@ -708,6 +723,10 @@ export const navItems = [
           id:3,
           img: "/icons8-microsoft-sql-server.svg",
         },
+        {
+          id:4,
+          img: "/Arduino.svg",
+        },
       ],
       bgIcon: [
         {
@@ -852,15 +871,19 @@ export const navItems = [
       icon: [
         {
           id:1,
-          img:"/re.svg" ,
+          img:"/Csharp.svg" ,
         },
         {
           id:2,
-          img: "/icons8-.net.svg",
+          img: "/NET.svg",
         },
         {
           id:3,
           img: "/icons8-microsoft-sql-server.svg",
+        },
+        {
+          id:4,
+          img: "/Arduino.svg",
         },
       ],
       bgIcon: [
@@ -912,6 +935,10 @@ export const navItems = [
         {
           id:3,
           img: "/icons8-microsoft-sql-server.svg",
+        },
+        {
+          id:4,
+          img: "/Arduino.svg",
         },
       ],
       bgIcon: [
@@ -1067,6 +1094,10 @@ export const navItems = [
         {
           id:3,
           img: "/icons8-microsoft-sql-server.svg",
+        },
+        {
+          id:4,
+          img: "/Bootstrap.svg",
         },
       ],
       bgIcon: [
@@ -1509,33 +1540,39 @@ export const navItems = [
   export const companies = [
     {
       id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
+      name: "",
+      img: "/servlet.png",
       nameImg: "/cloudName.svg",
       nameClassName: "text-black-100"
     },
     {
       id: 2,
-      name: "appwrite",
-      img: "/app.svg",
+      name: "",
+      img: "/TYAX.jpg",
       nameImg: "/appName.svg",
     },
     {
       id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
+      name: "",
+      img: "/ITGallery.jpg",
       nameImg: "/hostName.svg",
     },
     {
       id: 4,
-      name: "stream",
-      img: "/s.svg",
+      name: "",
+      img: "/cenmetrix.jpg",
       nameImg: "/streamName.svg",
     },
     {
       id: 5,
-      name: "docker.",
-      img: "/dock.svg",
+      name: "",
+      img: "/connex.jpg",
+      nameImg: "/dockerName.svg",
+    },
+    {
+      id: 6,
+      name: "",
+      img: "/Soft.png",
       nameImg: "/dockerName.svg",
     },
   ];

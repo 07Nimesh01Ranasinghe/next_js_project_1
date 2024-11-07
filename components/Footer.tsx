@@ -55,8 +55,8 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
               <Image
                 src={info.img}
                 alt={`${info.id} icon`} // Updated alt text for accessibility
-                width={30}
-                height={30}
+                width={40}
+                height={40}
               />
             </a>
           ))}

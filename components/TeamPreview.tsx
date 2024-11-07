@@ -10,7 +10,7 @@ export function TeamPreview() {
   return (
     <section id="team" className="py-20">
       <h1 className="heading">
-        Meet our <span className="text-purple">amazing team</span>
+        Meet Our <span className="text-purple">Amazing Team</span>
       </h1>
 
       <div className="flex flex-row items-center justify-center mb-4 w-full mt-12 md:mt-20">

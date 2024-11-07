@@ -9,8 +9,8 @@ const Clients = () => {
   return (
     <section id="testimonials" className="py-20">
       <h1 className="heading">
-        Kind words from
-        <span className="text-purple"> satisfied clients</span>
+        Kind Words From
+        <span className="text-purple"> Satisfied Clients</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
@@ -31,9 +31,9 @@ const Clients = () => {
               <Image
                 src={company.img}
                 alt={company.name}
-                width={40} // Adjusted width for better responsiveness
-                height={40} // Adjusted height to match width
-                className="object-contain md:w-10 w-5"
+                width={90} // Adjusted width for better responsiveness
+                height={90} // Adjusted height to match width
+                className="object-contain"
               />
               <span className="text-black-100 md:text-lg text-sm font-semibold">
                 {company.name}

@@ -155,7 +155,7 @@ export default function TeamPage() {
           <section className="flex flex-col items-center justify-center w-full min-h-screen gap-10 mt-20 py-16" ref={heroRef}>
             {/* Team Details Heading */}
             <h1 className="text-4xl font-bold mb-8">
-              Meet our <span className="text-purple">amazing team</span>
+              Meet Our <span className="text-purple">Amazing Team</span>
             </h1>
 
             <div className="w-1/4 max-w-1/3">

@@ -98,7 +98,7 @@ const RecentProjects = () => {
   return (
     <div id="projects" className="py-20 relative" style={{ zIndex: 1 }}>
       <h1 className="heading">
-        A small selection of <span className="text-purple">recent projects</span>
+        A Small Selection of <span className="text-purple">Recent Projects</span>
       </h1>
 
       {/* Flex container for the cards */}
@@ -106,10 +106,10 @@ const RecentProjects = () => {
         {projects.map((item) => (
           <div
             key={item.id}
-            className="w-full sm:w-1/2 lg:w-1/5 flex flex-col items-center justify-start" // Updated for 4 cards to fit in the view
+            className="w-[140%] sm:w-1/2 lg:w-1/5 flex flex-col items-center justify-start" // Updated for 4 cards to fit in the view
           >
             <PinContainer title="Visit" href={item.link || "https://twitter.com/mannupaaji"}>
-              <div className="relative flex items-center justify-center w-full overflow-hidden h-[250px] mb-10">
+              <div className="relative flex items-center justify-center min-w-max overflow-hidden h-[250px] mb-10">
                 <Image
                   src={item.img}
                   alt={item.title}
