@@ -31,7 +31,7 @@ export const PinContainer = ({
   return (
     <div
       className={cn(
-        "relative group/pin z-50 cursor-pointer",
+        "relative group/pin z-50 cursor-default",
         containerClassName
       )}
       onMouseEnter={onMouseEnter}
@@ -71,9 +71,10 @@ export const PinPerspective = ({
             href={href}
             target={"_blank"}
             rel="noopener noreferrer"
-            className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10"
+            className="relative flex space-x-2 items-center z-10 rounded-full  bg-white/50 backdrop-blur-lg py-0.5 px-4 ring-1 ring-white/10"
+
           >
-            <span className="relative z-20 text-white text-xs font-bold inline-block py-0.5">
+            <span className="relative z-20 text-black text-xs font-bold inline-block py-0.5">
               {title}
             </span>
             <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover/btn:opacity-40"></span>

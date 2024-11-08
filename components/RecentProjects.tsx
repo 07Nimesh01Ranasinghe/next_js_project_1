@@ -106,16 +106,19 @@ const RecentProjects = () => {
         {projects.map((item) => (
           <div
             key={item.id}
-            className="w-[140%] sm:w-1/2 lg:w-1/5 flex flex-col items-center justify-start" // Updated for 4 cards to fit in the view
+            // className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-20 mt-10 items-center justify-center" 
+            className="w-[150%] sm:w-1/2 lg:w-1/5 flex flex-col items-center justify-start" 
           >
-            <PinContainer title="Visit" href={item.link || "https://twitter.com/mannupaaji"}>
+            <PinContainer title={item.title} href={item.link || "https://twitter.com/mannupaaji"}>
               <div className="relative flex items-center justify-center min-w-max overflow-hidden h-[250px] mb-10">
                 <Image
                   src={item.img}
                   alt={item.title}
-                  width={720}
-                  height={720}
-                  className="object-fit z-10 absolute bottom-0"
+                  layout="fill"
+                  objectFit="cover"
+                  // width={720}
+                  // height={720}
+                  // className="object-fit z-10 absolute bottom-0"
                 />
               </div>
 
@@ -158,3 +161,8 @@ const RecentProjects = () => {
 };
 
 export default RecentProjects;
+
+
+
+
+

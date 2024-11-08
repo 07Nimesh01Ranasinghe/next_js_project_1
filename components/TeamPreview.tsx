@@ -17,7 +17,7 @@ export function TeamPreview() {
         <AnimatedTooltip items={people} />
 
         {/* Adding a link with an icon */}
-        <Link href="/team" className="flex items-center ml-4 text-purple-600 hover:text-purple-800">
+        <Link href="/team" className="flex items-center ml-4 text-purple-600 hover:text-p-500">
           <FiArrowRightCircle size={24} />
           {/* <span className="ml-2">See More</span> */}
         </Link>

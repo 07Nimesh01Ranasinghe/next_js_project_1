@@ -25,8 +25,8 @@ const Grid = () => {
         ))}
       </BentoGrid>
     </section>
-  )
-}
+  );
+};
 
 export default Grid
 
