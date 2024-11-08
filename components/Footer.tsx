@@ -30,7 +30,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
           Reach out to us today and let&apos;s discuss how we can help you
           achieve your goals.
         </p>
-        <a href="mailto:dtslife21@gmail.com">
+        <a href="mailto:lahiru@dockyardsolution.lk">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
