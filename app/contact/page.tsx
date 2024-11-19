@@ -91,6 +91,7 @@
 
 "use client";
 
+import Head from 'next/head';
 import React, { useState, useEffect, useRef } from "react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Footer from "@/components/Footer";
@@ -135,6 +136,30 @@ export default function ContactPage() {
   });
 
   return (
+    <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Careers",
+              "url": "https://dockyardsoftware.com/contact",
+              "description": "Explore career opportunities with Dockyard Software. Join our diverse, inclusive team and work in a dynamic environment where innovation thrives.",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https: //dockyardsoftware.com/search?q={}"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+94 77 697 0808",
+                "contactType": "Contact Us"
+              }
+            }),
+          }}
+        />
+      </Head>
     <main className="relative dark:bg-black-100 bg-white flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         {/* Floating Navigation Bar */}
@@ -171,5 +196,6 @@ export default function ContactPage() {
         <Footer className="relative w-full mt-20" />
       </div>
     </main>
+    </>
   );
 }

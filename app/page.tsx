@@ -328,6 +328,7 @@
 // }
 
 "use client";
+import Head from 'next/head';
 import React, { useState, useEffect, useRef } from "react";
 import {
   motion,
@@ -410,47 +411,72 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="relative dark:bg-black-100 bg-white flex justify-center items-center overflow-clip flex-col mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
-        <AnimatePresence mode="wait">
-          {logoVisible && (
-            <motion.header
-              initial={{ opacity: 1, y: -100 }}
-              animate={{ y: logoVisible ? 0 : -100, opacity: logoVisible ? 1 : 0 }}
-              transition={{ duration: 0.2 }}
-              className="flex items-center justify-between py-4 fixed top-10 left-0 right-0 z-50"
-            >
-              {/* Logo with animation matching the navbar */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0, y: -17 }}
-                transition={{ duration: 0.3 }}
-                className="text-xl font-bold pl-4"
-              >
-                <span className="text-3xl text-black-100">DOCKYARD</span>
-                <span className="text-purple bg-p_glassy px-1 rounded">SOFTWARE</span>
-              </motion.div>
-              <FloatingNav navItems={navItems} />
-            </motion.header>
-          )}
-        </AnimatePresence>
-        <Hero />
-        <Grid />
-        <RecentProjects />
-        <TeamPreview />
-        <Clients />
-        <Experience />
-        <Approach />
-        <Footer />
+    <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Home",
+              "url": "https://dockyardsoftware.com",
+              "description": "Welcome to Dockyard Software, where we specialize in innovative solutions for software development. Meet our team, explore our projects, and discover career opportunities.",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Dockyard Software",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://yourwebsite.com/logo.png"
+                }
+              }
+            }),
+          }}
+        />
+      </Head>
 
-        {/* BackToTopButton */}
-        {showBackToTop && (
-          <div className="fixed bottom-10 right-4 z-50">
-            <BackToTopButton />
-          </div>
-        )}
-      </div>
-    </main>
+      <main className="relative dark:bg-black-100 bg-white flex justify-center items-center overflow-clip flex-col mx-auto sm:px-10 px-5">
+        <div className="max-w-7xl w-full">
+          <AnimatePresence mode="wait">
+            {logoVisible && (
+              <motion.header
+                initial={{ opacity: 1, y: -100 }}
+                animate={{ y: logoVisible ? 0 : -100, opacity: logoVisible ? 1 : 0 }}
+                transition={{ duration: 0.2 }}
+                className="flex items-center justify-between py-4 fixed top-10 left-0 right-0 z-50"
+              >
+                {/* Logo with animation matching the navbar */}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0, y: -17 }}
+                  transition={{ duration: 0.3 }}
+                  className="text-xl font-bold pl-4"
+                >
+                  <span className="text-3xl text-black-100">DOCKYARD</span>
+                  <span className="text-purple bg-p_glassy px-1 rounded">SOFTWARE</span>
+                </motion.div>
+                <FloatingNav navItems={navItems} />
+              </motion.header>
+            )}
+          </AnimatePresence>
+          <Hero />
+          <Grid />
+          <RecentProjects />
+          <TeamPreview />
+          <Clients />
+          <Experience />
+          <Approach />
+          <Footer />
+
+          {/* BackToTopButton */}
+          {showBackToTop && (
+            <div className="fixed bottom-10 right-4 z-50">
+              <BackToTopButton />
+            </div>
+          )}
+        </div>
+      </main>
+    </>
   );
 }
 

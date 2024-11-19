@@ -121,7 +121,7 @@ export const navItems = [
       des5: "Automated Reminders: SMS or email reminders for clients.",
       des6: "Payment Integration: Accept multiple payment methods (cash, card, online)",
       des7: "Reporting & Analytics: Sales, appointments, and customer satisfaction.",
-      img: "/CarAttendance2.png",
+      img: "/rcc_1.jpg",
       icon: [
         {
           id:1,
@@ -174,6 +174,7 @@ export const navItems = [
       des5: "Customer Management: Store customer and vehicle details.",
       des6: "Job Cards: Track mechanic assignments and work progress.",
       des7: "Notifications: Service completion and maintenance reminders.",
+      img: "/ESuplier.jpg",
       icon: [
         {
           id:1,
@@ -227,7 +228,8 @@ export const navItems = [
       des4: "Fleet Management: Monitor vehicle conditions, service schedules, and availability.",
       des5: "Payment Integration: Multiple payment options and invoicing.",
       des6: "Contract Management: Digital rental agreements with e-signatures.",
-      des7: "Notifications: Reminders for vehicle return and payment due.",
+      des7: "Notifications: Reminders for vehicle return and payment due.", 
+      img: "/weehena.jpg",
       icon: [
         {
           id:1,
@@ -280,6 +282,7 @@ export const navItems = [
       des5: "Integration with Banks: Automatic bank statement imports.",
       des6: "Expense Split: Shared expense management for families or teams.",
       des7: "Notifications: Alerts for overspending or upcoming bills.",
+      img: "/weehena.jpg",
       icon: [
         {
           id:1,
@@ -336,6 +339,7 @@ export const navItems = [
       des5: "Payment Tracking: Monitor paid, unpaid, and overdue invoices.",
       des6: "Multi-Currency Invoicing: Support for international transactions.",
       des7: "Reporting & Analytics: Sales, revenue, and client analysis.",
+      img: "/NOCOPS.jpg",
       icon: [
         {
           id:1,
@@ -1402,7 +1406,7 @@ export const navItems = [
     },
     {
       id: 21,
-      name: "Binura Thilakarathne", //K.D.B.N. Thilakarathne
+      name: "Binura Thilakaratne", //K.D.B.N. Thilakarathne
       designation: "Associate Software Engineer (IOT)",
       des: "",
       image:"/Binura.png",
@@ -1455,7 +1459,7 @@ export const navItems = [
     {
       id: 29,
       name: "Yeran Fernando",
-      designation: "Associate Software Engineer",
+      designation: "Associate Data Scince Engineer",
       image:"/yeran.png",
     },
     {
@@ -1640,7 +1644,7 @@ export const navItems = [
     {
       id: 2,
       title: "Mail Us",
-      desc: "info@dockyardsolutions.lk",
+      desc: "lahiru@dockyardsolution.lk",
       className: "md:col-span-2",
       thumbnail: "/mail.json",
       
