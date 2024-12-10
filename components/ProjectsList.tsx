@@ -480,7 +480,7 @@ const contentVariants = {
 };
 
 const ProjectsList: FC = () => {
-  const [currentProjectIndex, setCurrentProjectIndex] = useState(1);
+  const [currentProjectIndex, setCurrentProjectIndex] = useState<number>(1);
 
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
@@ -489,7 +489,7 @@ const ProjectsList: FC = () => {
     sections.forEach((section, index) => {
       const rect = section.getBoundingClientRect();
       if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-        currentIndex = index + 1;
+        currentIndex = index + 1; // Update the index of the visible project
       }
     });
 
@@ -518,21 +518,32 @@ const ProjectsList: FC = () => {
         return (
           <motion.section
             key={project.id}
+            id={`project-${index + 1}`} // Unique ID for each project
             className="h-screen snap-start flex gap-20 items-center justify-center p-8 relative"
             variants={sectionVariants}
             initial="hidden"
-            whileInView="visible" // Trigger animations when the section comes into view
-            viewport={{ once: false, amount: 0.5 }} // Allow animation on repeated scrolling up or down
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1 }}
           >
             {/* Top Left: SVG and Project Number */}
             <div className="absolute top-12 left-7 flex items-center space-x-2">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150" width="50" height="75">
-                <rect width="110" height="100" fill="#f2f2f2" />
-                <polygon points="0,100 50,150 110,100" fill="#f2f2f2" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 150"
+                width="60"
+                height="75"
+                className={currentProjectIndex === index + 1 ? "opacity-100" : "opacity-30"}
+              >
+                <rect width="100" height="100" fill="#f2f2f2" />
+                <polygon points="0,100 50,150 100,100" fill="#f2f2f2" />
               </svg>
-              <span className="text-p-500 text-lg font-bold absolute -left-1 top-4">
-                {project.id}/{allProjects.length}
+              <span
+                className={`text-lg font-bold absolute -left-1 top-4 ${
+                  currentProjectIndex === index + 1 ? "text-p-500" : "text-p-500"
+                }`}
+              >
+                {index + 1}/{allProjects.length}
               </span>
             </div>
 
@@ -572,7 +583,7 @@ const ProjectsList: FC = () => {
 
               {/* Technology Icons */}
               <div className="flex justify-center w-full mt-auto">
-                {project.icon.map((icon, idx) => (
+                {project.icon.map((icon) => (
                   <motion.div
                     key={icon.id}
                     className="mx-2"
@@ -597,6 +608,8 @@ const ProjectsList: FC = () => {
 };
 
 export default ProjectsList;
+
+
 
 
 

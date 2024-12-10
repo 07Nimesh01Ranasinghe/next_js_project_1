@@ -121,7 +121,7 @@ export const navItems = [
       des5: "Automated Reminders: SMS or email reminders for clients.",
       des6: "Payment Integration: Accept multiple payment methods (cash, card, online)",
       des7: "Reporting & Analytics: Sales, appointments, and customer satisfaction.",
-      img: "/rcc_1.jpg",
+      img: "/salon_2.png",
       icon: [
         {
           id:1,
@@ -174,7 +174,7 @@ export const navItems = [
       des5: "Customer Management: Store customer and vehicle details.",
       des6: "Job Cards: Track mechanic assignments and work progress.",
       des7: "Notifications: Service completion and maintenance reminders.",
-      img: "/ESuplier.jpg",
+      img: "/car_service.png",
       icon: [
         {
           id:1,
@@ -229,7 +229,7 @@ export const navItems = [
       des5: "Payment Integration: Multiple payment options and invoicing.",
       des6: "Contract Management: Digital rental agreements with e-signatures.",
       des7: "Notifications: Reminders for vehicle return and payment due.", 
-      img: "/weehena.jpg",
+      img: "/car_rental.png",
       icon: [
         {
           id:1,
@@ -282,7 +282,7 @@ export const navItems = [
       des5: "Integration with Banks: Automatic bank statement imports.",
       des6: "Expense Split: Shared expense management for families or teams.",
       des7: "Notifications: Alerts for overspending or upcoming bills.",
-      img: "/weehena.jpg",
+      img: "/expense_tracker.png",
       icon: [
         {
           id:1,
@@ -392,6 +392,7 @@ export const navItems = [
       des5: "Table Reservations: Allow customers to reserve tables.",
       des6: "Employee Management: Staff scheduling, performance, and tips tracking.",
       des7: "Reports: Daily sales, popular dishes, and stock analysis.",
+      img: "/doccafe.png",
       icon: [
         {
           id:1,
@@ -443,6 +444,7 @@ export const navItems = [
       des4: "Stat Tracking: Detailed player and team performance tracking.",
       des5: "Notifications: Match reminders, results, and announcements.",
       des6: "Reports: Match performance, individual stats, and win/loss records.",
+      img: "/rcc_5.png",
       icon: [
         {
           id:1,
@@ -559,6 +561,7 @@ export const navItems = [
       des5: "Notifications: Alerts for classes, fees, and updates.",
       des6: "Assessment: Track test results, grades, and progress.",
       des7: "Reports: Attendance, fee collection, and performance reports.",
+      img: "/tuition_class.png",
       icon: [
         {
           id:1,
@@ -611,6 +614,7 @@ export const navItems = [
       des5: "Inventory Reports: Track stock movements and overstocking.",
       des6: "Barcode Scanning: Fast data entry with barcode support.",
       des7: "Multi-location Support: Manage inventory across locations.",
+      img: "/inventory.png",
       icon: [
         {
           id:1,
@@ -714,6 +718,7 @@ export const navItems = [
       des4: "Performance Metrics: Analyze network performance and uptime.",
       des5: "Reporting: Detailed system performance and resolutions.",
       des6: "Integration: With ticketing and IT service management tools.",
+      img: "/NOCOPS.jpg",
       icon: [
         {
           id:1,
@@ -769,6 +774,7 @@ export const navItems = [
       des4: "Knowledge Base: FAQs and guides for common problems.",
       des5: "SLA Management: Track service level agreements.",
       des6: "Reporting: Resolution times and customer satisfaction.",
+      img: "/ticketing.png",
       icon: [
         {
           id:1,
@@ -821,6 +827,7 @@ export const navItems = [
       des5: "Collaboration: Multiple users collaborate on documents.",
       des6: "Integration: With CRM, ERP, or file storage solutions.",
       des7: "Audit Trails: Track who accessed or edited documents.",
+      img: "/document_system.png",
       icon: [
         {
           id:1,
@@ -872,6 +879,7 @@ export const navItems = [
       des4: "Shift Scheduling: Create and manage employee shifts.",
       des5: "Overtime Tracking: Calculate overtime hours automatically.",
       des6: "Reports: Attendance, punctuality, and overtime reports.",
+      img: "/attendance_management.png",
       icon: [
         {
           id:1,
@@ -1033,6 +1041,7 @@ export const navItems = [
       des4: "Leave Integration: Link leave data to payroll.",
       des5: "Payslips: Generate and distribute digital payslips.",
       des6: "Reporting: Payroll summaries and tax reports.",
+      img: "/pay_roll.png",
       icon: [
         {
           id:1,
@@ -1086,6 +1095,7 @@ export const navItems = [
       des6: "Lab Test Management: Track lab orders and results.",
       des7: "Inventory Management: Manage supplies and restocking alerts.",
       des8: "Doctor and Staff Management: Track doctor schedules, patient loads, and performance analytics.",
+      img: "/medi_care.jpg",
       icon: [
         {
           id:1,

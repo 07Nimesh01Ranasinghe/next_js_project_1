@@ -156,7 +156,7 @@ const Hero = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center h-full -mt-16">
-        {/* Mirror Text with animation */}
+         {/* Mirror Text with animation */}
         <motion.h1
           id="dockyard-text"
           data-text="Dockyard"

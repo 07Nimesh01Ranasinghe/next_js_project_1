@@ -78,9 +78,13 @@ export default function ProjectsPage() {
           )}
         </AnimatePresence>
 
-        {/* Careers Section */}
+        <div className="flex justify-center pt-28 pb-0">
+          <h1 className="text-4xl font-bold mb-8">
+              Bring Your <span className="text-purple">Project</span>
+          </h1>
+        </div>
 
-        <div className="mt-10">
+        <div className="-mt-8">
           {/* <StickyScrollRevealDemo/> */}
           <ProjectsList/>
           
