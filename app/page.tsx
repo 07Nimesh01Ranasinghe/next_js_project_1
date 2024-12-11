@@ -327,6 +327,8 @@
 //   );
 // }
 
+
+// Working Code 12/11/2024
 "use client";
 import Head from 'next/head';
 import React, { useState, useEffect, useRef } from "react";
@@ -340,13 +342,16 @@ import { FloatingNav } from "@/components/ui/floating-navbar";
 import { navItems } from "@/data";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
-import RecentProjects from "@/components/RecentProjects";
+// import RecentProjects from "@/components/RecentProjects";
 import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
-import { TeamPreview } from "@/components/TeamPreview";
+// import { TeamPreview } from "@/components/TeamPreview";
 import BackToTopButton from "@/components/BackToTopButton";
+import TeamNew from '@/components/TeamNew';
+import { AnimatedCardDemo } from '@/components/AnimatedCardDemo';
+// import ProjectShowcase from '@/components/ProjectShowcase';
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -461,8 +466,10 @@ export default function Home() {
           </AnimatePresence>
           <Hero />
           <Grid />
-          <RecentProjects />
-          <TeamPreview />
+          {/* <RecentProjects /> */}
+          <AnimatedCardDemo/>
+          {/* <TeamPreview /> */}
+          <TeamNew/>
           <Clients />
           <Experience />
           <Approach />
@@ -558,3 +565,13 @@ export default function Home() {
 //   }`;
 
 // export default Button;
+
+
+
+
+
+
+
+
+
+

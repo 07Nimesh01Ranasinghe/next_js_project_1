@@ -1669,6 +1669,37 @@ export const navItems = [
     },
   ];
 
+  export const team = [
+    { id: 1, img: "/Anumi Gunarathna.png" },
+    { id: 2, img: "/Binura.png" },
+    { id: 3, img: "/chathuranga.png" },
+    { id: 4, img: "/chenuka.png" },
+    { id: 5, img: "/nimesh.png" },
+    { id: 6, img: "/Kushan.png" },
+    { id: 7, img: "/lakmali.png" },
+    { id: 8, img: "/Loottaa.png" },
+    { id: 9, img: "/nethmi.png" },
+    { id: 10, img: "/Gamage.png" },
+    { id: 11, img: "/Nirmitha.png" },
+    { id: 12, img: "/nuwani_1.png" },
+    { id: 13, img: "/pamitha.png" },
+    { id: 14, img: "/rajith.png" },
+    { id: 15, img: "/Randeera.png" },
+    { id: 16, img: "/Rohan.png" },
+    { id: 17, img: "/Sachith.png" },
+    { id: 18, img: "/Samaraweera.png" },
+    { id: 19, img: "/Yapa.png" },
+    { id: 20, img: "/yeran.png" },
+    { id: 21, img: "/Duhithu.png" },
+    { id:22, img: "/chenuka.png"},
+    { id: 23, img: "/Yapa.png" },
+    { id: 24, img: "/yeran.png" },
+    { id: 25, img: "/Duhithu.png" },
+    { id: 26, img: "/nurse.png" },
+    { id: 27, img: "/nurse.png" },
+    { id: 28, img: "/Anumi Gunarathna.png" },
+];
+
 
 
   // dtslife21@gmail.com
