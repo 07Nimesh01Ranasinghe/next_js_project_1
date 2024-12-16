@@ -352,6 +352,7 @@ import BackToTopButton from "@/components/BackToTopButton";
 import TeamNew from '@/components/TeamNew';
 import { AnimatedCardDemo } from '@/components/AnimatedCardDemo';
 import StepCard from '@/components/StepCard';
+import StepCategories from '@/components/StepCategories';
 // import { StickyScrollRevealDemo } from '@/components/StickyScrollRevealDemo';
 // import ProjectShowcase from '@/components/ProjectShowcase';
 
@@ -450,7 +451,7 @@ export default function Home() {
                 initial={{ opacity: 1, y: -100 }}
                 animate={{ y: logoVisible ? 0 : -100, opacity: logoVisible ? 1 : 0 }}
                 transition={{ duration: 0.2 }}
-                className="flex items-center justify-between py-4 fixed top-10 left-0 right-0 z-50"
+                className="flex items-center justify-between py-4 fixed top-10 left-0 right-0 z-[1000]"
               >
                 {/* Logo with animation matching the navbar */}
                 <motion.div
@@ -477,6 +478,7 @@ export default function Home() {
           <Experience />
           {/* <Approach /> */}
           <StepCard/>
+          {/* <StepCategories/> */}
           <Footer />
 
           {/* BackToTopButton */}

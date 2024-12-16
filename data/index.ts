@@ -1700,6 +1700,38 @@ export const navItems = [
     { id: 28, img: "/Anumi Gunarathna.png" },
 ];
 
-
+ 
+export const workFlow = [
+  {
+    id: 1,
+    title: "Requirement Analysis & Planning",
+    description: "Understand project requirements, break them into tasks, and set priorities. Plan timelines, allocate resources, and document objectives.",
+    icon:"",
+  },
+  {
+    id: 2,
+    title: "Design & Prototyping",
+    description: "Design the system architecture, UI/UX, and create prototypes or wireframes. Review designs with stakeholders to finalize the approach.",
+    icon: "",
+  },
+  {
+    id: 3,
+    title: "Development & Code Implementation",
+    description: "Write clean, maintainable code following standards and version control practices. Commit changes regularly and implement the planned features.",
+    icon: "",
+  },
+  {
+    id: 4,
+    title: "Testing & Quality Assurance",
+    description: "Test functionality, performance, and security to identify and fix bugs. Perform unit, integration, and user acceptance testing (UAT).",
+    icon: "",
+  },
+  {
+    id: 5,
+    title: "Deployment & Monitoring",
+    description: "Deploy the software using automated pipelines and monitor post-release. Track performance, fix issues, and gather user feedback for improvements.",
+    icon: "",
+  },
+];
 
   // dtslife21@gmail.com
