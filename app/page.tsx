@@ -351,6 +351,8 @@ import Footer from "@/components/Footer";
 import BackToTopButton from "@/components/BackToTopButton";
 import TeamNew from '@/components/TeamNew';
 import { AnimatedCardDemo } from '@/components/AnimatedCardDemo';
+import StepCard from '@/components/StepCard';
+// import { StickyScrollRevealDemo } from '@/components/StickyScrollRevealDemo';
 // import ProjectShowcase from '@/components/ProjectShowcase';
 
 export default function Home() {
@@ -468,11 +470,13 @@ export default function Home() {
           <Grid />
           {/* <RecentProjects /> */}
           <AnimatedCardDemo/>
+          {/* <StickyScrollRevealDemo/> */}
           {/* <TeamPreview /> */}
           <TeamNew/>
           <Clients />
           <Experience />
-          <Approach />
+          {/* <Approach /> */}
+          <StepCard/>
           <Footer />
 
           {/* BackToTopButton */}

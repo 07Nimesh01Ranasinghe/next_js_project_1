@@ -5,38 +5,38 @@ export function AnimatedCardDemo() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "../public/rcc_5.png"
+        "Need a robust inventory management solution with real-time tracking, low-stock alerts, and multi-location support?",
+      name: "Weehena Farm - Inventory",
+      designation: "Weehena Farm - Inventory",
+      src: "/inventory.png"
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "../public/car_rental.png",
+        "543m nbvc",
+      name: "NOC OPS System",
+      designation: "NOC OPS System",
+      src: "/NOCOPS.jpg",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "../public/restaurant.png",
+        "Want a customized ERP solution to streamline your small business's finances, inventory, and customer management?",
+      name: "E Supplier",
+      designation: "E Supplier",
+      src: "/ESuplier.jpg",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "../public/car-service.png",
+        "An all-in-one platform to streamline car service center operations, with features for scheduling appointments.",
+      name: "Car Service Station Management System",
+      designation: "",
+      src: "/car_service.png",
     },
     {
       quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "../public/NOCOPS.jpg",
+        "Ready to elevate your school cricket program with a system for player tracking, match scheduling, and performance insights?",
+      name: "Richmand College Cricket",
+      designation: "Richmand College Cricket",
+      src: "/rcc_5.png",
     },
   ];
   return <AnimatedCard testimonials={testimonials} />;

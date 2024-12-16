@@ -23,6 +23,27 @@ export function WobbleCardDemo() {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full bg-transparent">
+
+      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-p-400 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full">
+            <div className="max-w-sm">
+            <h2 className="max-w-sm md:max-w-lg text-left text-base md:text-xl lg:text-3xl font-extrabold tracking-[-0.015em] text-white">
+                Who We Are?
+            </h2>
+            <p className="mt-4 max-w-[26rem] text-left text-base/6 text-white font-semibold">
+                Dockyard Total Solutions (Pvt) Ltd (DTS), a subsidiary of Colombo Dockyard
+                PLC with over 35% government ownership, specializes in ICT systems engineering.
+                Established under the Companies Act of 2007, DTS provides comprehensive ICT
+                solutions through its Integrated ICT Solution Center, supported by a team of
+                25+ skilled engineers, offering 24/7 service with deep industry expertise and a commitment to excellence.
+            </p>
+            </div>
+            <div className="w-full md:w-1/2 pr-2 self-center md:ml-4">
+            <CardStack items={cardItems} scaleFactor={0.2} topCardScale={1.1} />
+            </div>
+        </div>
+      </WobbleCard>
+
       <WobbleCard
         containerClassName="col-span-1 lg:col-span-2 h-full bg-purple min-h-[500px] lg:min-h-[300px]"
         className=""
@@ -54,25 +75,7 @@ export function WobbleCardDemo() {
             Un-detachable partner in total solutions.
         </p>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-p-400 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
-        <div className="flex flex-col md:flex-row items-center justify-between w-full">
-            <div className="max-w-sm">
-            <h2 className="max-w-sm md:max-w-lg text-left text-base md:text-xl lg:text-3xl font-extrabold tracking-[-0.015em] text-white">
-                Who We Are?
-            </h2>
-            <p className="mt-4 max-w-[26rem] text-left text-base/6 text-white font-semibold">
-                Dockyard Total Solutions (Pvt) Ltd (DTS), a subsidiary of Colombo Dockyard
-                PLC with over 35% government ownership, specializes in ICT systems engineering.
-                Established under the Companies Act of 2007, DTS provides comprehensive ICT
-                solutions through its Integrated ICT Solution Center, supported by a team of
-                25+ skilled engineers, offering 24/7 service with deep industry expertise and a commitment to excellence.
-            </p>
-            </div>
-            <div className="w-full md:w-1/2 pr-2 self-center md:ml-4">
-            <CardStack items={cardItems} scaleFactor={0.2} topCardScale={1.1} />
-            </div>
-        </div>
-      </WobbleCard>
+      
 
     </div>
   );
