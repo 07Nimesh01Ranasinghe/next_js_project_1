@@ -225,9 +225,126 @@
 // export default StepCard;
 
 
-"use client"
-import React from "react";
-import { motion } from "framer-motion";
+// "use client"
+// import React from "react";
+// import { motion } from "framer-motion";
+// import { workFlow } from "@/data/index"; // Adjust the import path
+
+// interface StepCardProps {
+//   step: {
+//     id: number;
+//     title: string;
+//     description: string;
+//     icon: string;
+//   };
+// }
+
+// const StepCard: React.FC<StepCardProps> = ({ step }) => {
+//   return (
+//     <div className="relative flex items-center justify-center w-[370px] h-[320px] overflow-hidden">
+//       {/* Outer Circle Appears with Fade and Scale */}
+//       <motion.div
+//         className="relative flex flex-col items-center justify-center w-60 h-60 rounded-full shadow-lg bg-white z-10"
+//         initial={{ scale: 0, opacity: 0 }}
+//         animate={{ scale: 1, opacity: 1 }}
+//         transition={{ duration: 1, ease: "easeOut" }}
+//       >
+//         {/* Step Title */}
+//         <motion.h2
+//           className="text-p-400 text-xs font-bold mb-2"
+//           initial={{ y: 20, opacity: 0 }}
+//           animate={{ y: 0, opacity: 1 }}
+//           transition={{ delay: 1, duration: 0.8, ease: "easeOut" }}
+//         >
+//           {step.title}
+//         </motion.h2>
+
+//         {/* Step Description */}
+//         <motion.p
+//           className="text-center text-gray-600 px-4 text-xs"
+//           initial={{ y: 20, opacity: 0 }}
+//           animate={{ y: 0, opacity: 1 }}
+//           transition={{ delay: 1.2, duration: 0.8, ease: "easeOut" }}
+//         >
+//           {step.description}
+//         </motion.p>
+//       </motion.div>
+
+//       {/* Partial Circular Line with Draw Animation */}
+//       <div className="absolute w-80 h-80">
+//         <motion.svg
+//           className="absolute inset-0 w-full h-full"
+//           viewBox="0 0 200 200"
+//           xmlns="http://www.w3.org/2000/svg"
+//         >
+//           <motion.circle
+//             cx="100"
+//             cy="100"
+//             r="95"
+//             fill="none"
+//             stroke="#CBACF9"
+//             strokeWidth="3"
+//             strokeDasharray="160 300"
+//             strokeDashoffset="300"
+//             strokeLinecap="round"
+//             initial={{ strokeDashoffset: 300 }}
+//             animate={{ strokeDashoffset: 0 }}
+//             transition={{ duration: 1.5, delay: 1, ease: "easeInOut" }}
+//           />
+//         </motion.svg>
+//       </div>
+
+//       {/* Icon Moving Along the Circle Path */}
+//       <motion.div
+//         className="absolute w-14 h-14 bg-p-200 rounded-full flex items-center justify-center shadow-lg z-20"
+//         initial={{ x: 50, y: -50, opacity: 0 }}
+//         animate={{ x: 122, y: -30, opacity: 1 }}
+//         transition={{ delay: 2.2, duration: 1.5, ease: "easeInOut" }}
+//         style={{
+//           top: "50%",
+//           left: "50%",
+//           transform: "translate(-50%, -50%)",
+//         }}
+//       >
+//         {/* Icon */}
+//         <svg
+//           className="w-7 h-7 text-white"
+//           xmlns="http://www.w3.org/2000/svg"
+//           fill="none"
+//           viewBox="0 0 24 24"
+//           stroke="currentColor"
+//         >
+//           <path
+//             strokeLinecap="round"
+//             strokeLinejoin="round"
+//             strokeWidth={2}
+//             d={step.icon || "M9.75 20h4.5m-2.25-1v-1m4.5-7a4.5 4.5 0 10-9 0c0 1.326.58 2.52 1.5 3.32v.18a2.25 2.25 0 002.25 2.25h1.5a2.25 2.25 0 002.25-2.25v-.18a4.5 4.5 0 001.5-3.32z"}
+//           />
+//         </svg>
+//       </motion.div>
+//     </div>
+//   );
+// };
+
+// const StepList: React.FC = () => {
+//   return (
+//     <div className="flex flex-wrap justify-center gap-8">
+//       {workFlow.map((step) => (
+//         <StepCard key={step.id} step={step} />
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default StepList;
+
+
+
+
+
+"use client";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { workFlow } from "@/data/index"; // Adjust the import path
 
 interface StepCardProps {
@@ -240,21 +357,27 @@ interface StepCardProps {
 }
 
 const StepCard: React.FC<StepCardProps> = ({ step }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { triggerOnce: true, threshold: 0.3 }); // Trigger when 30% of the component is visible
+
   return (
-    <div className="relative flex items-center justify-center w-[370px] h-[320px] overflow-hidden">
+    <div
+      ref={ref}
+      className="relative flex items-center justify-center w-[370px] h-[320px] overflow-hidden"
+    >
       {/* Outer Circle Appears with Fade and Scale */}
       <motion.div
         className="relative flex flex-col items-center justify-center w-60 h-60 rounded-full shadow-lg bg-white z-10"
         initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
+        animate={isInView ? { scale: 1, opacity: 1 } : {}}
         transition={{ duration: 1, ease: "easeOut" }}
       >
         {/* Step Title */}
         <motion.h2
           className="text-p-400 text-xs font-bold mb-2"
           initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 1, duration: 0.8, ease: "easeOut" }}
+          animate={isInView ? { y: 0, opacity: 1 } : {}}
+          transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
         >
           {step.title}
         </motion.h2>
@@ -263,8 +386,8 @@ const StepCard: React.FC<StepCardProps> = ({ step }) => {
         <motion.p
           className="text-center text-gray-600 px-4 text-xs"
           initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.8, ease: "easeOut" }}
+          animate={isInView ? { y: 0, opacity: 1 } : {}}
+          transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
         >
           {step.description}
         </motion.p>
@@ -288,8 +411,8 @@ const StepCard: React.FC<StepCardProps> = ({ step }) => {
             strokeDashoffset="300"
             strokeLinecap="round"
             initial={{ strokeDashoffset: 300 }}
-            animate={{ strokeDashoffset: 0 }}
-            transition={{ duration: 1.5, delay: 1, ease: "easeInOut" }}
+            animate={isInView ? { strokeDashoffset: 0 } : {}}
+            transition={{ duration: 1.5, delay: 0.7, ease: "easeInOut" }}
           />
         </motion.svg>
       </div>
@@ -298,8 +421,8 @@ const StepCard: React.FC<StepCardProps> = ({ step }) => {
       <motion.div
         className="absolute w-14 h-14 bg-p-200 rounded-full flex items-center justify-center shadow-lg z-20"
         initial={{ x: 50, y: -50, opacity: 0 }}
-        animate={{ x: 122, y: -30, opacity: 1 }}
-        transition={{ delay: 2.2, duration: 1.5, ease: "easeInOut" }}
+        animate={isInView ? { x: 122, y: -30, opacity: 1 } : {}}
+        transition={{ delay: 1.2, duration: 1.5, ease: "easeInOut" }}
         style={{
           top: "50%",
           left: "50%",
@@ -318,7 +441,10 @@ const StepCard: React.FC<StepCardProps> = ({ step }) => {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d={step.icon || "M9.75 20h4.5m-2.25-1v-1m4.5-7a4.5 4.5 0 10-9 0c0 1.326.58 2.52 1.5 3.32v.18a2.25 2.25 0 002.25 2.25h1.5a2.25 2.25 0 002.25-2.25v-.18a4.5 4.5 0 001.5-3.32z"}
+            d={
+              step.icon ||
+              "M9.75 20h4.5m-2.25-1v-1m4.5-7a4.5 4.5 0 10-9 0c0 1.326.58 2.52 1.5 3.32v.18a2.25 2.25 0 002.25 2.25h1.5a2.25 2.25 0 002.25-2.25v-.18a4.5 4.5 0 001.5-3.32z"
+            }
           />
         </svg>
       </motion.div>
@@ -328,7 +454,7 @@ const StepCard: React.FC<StepCardProps> = ({ step }) => {
 
 const StepList: React.FC = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-8">
+    <div className="flex flex-wrap justify-center gap-8 py-10">
       {workFlow.map((step) => (
         <StepCard key={step.id} step={step} />
       ))}
@@ -337,7 +463,3 @@ const StepList: React.FC = () => {
 };
 
 export default StepList;
-
-
-
-

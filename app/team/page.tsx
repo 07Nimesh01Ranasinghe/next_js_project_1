@@ -74,8 +74,9 @@ import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Footer from "@/components/Footer";
 import { navItems } from "@/data";
-import { ExpandableCard } from "@/components/ExpandableCard";
-import { TracingBeam } from "@/components/ui/tracing-beam";
+import CoreValues from "@/components/CoreValues";
+// import { ExpandableCard } from "@/components/ExpandableCard";
+// import { TracingBeam } from "@/components/ui/tracing-beam";
 
 export default function TeamPage() {
   const { scrollYProgress } = useScroll();
@@ -150,25 +151,27 @@ export default function TeamPage() {
           )}
         </AnimatePresence>
 
-        <TracingBeam px-8>
-          {/* Team Details Section */}
+        <CoreValues/>
+
+        {/* <TracingBeam px-8>
+          {/* Team Details Section 
           <section className="flex flex-col items-center justify-center w-full min-h-screen gap-10 mt-20 py-16" ref={heroRef}>
-            {/* Team Details Heading */}
+            {/* Team Details Heading 
             <h1 className="text-4xl font-bold mb-8">
               Meet Our <span className="text-purple">Amazing Team</span>
             </h1>
 
             <div className="w-1/4 max-w-1/3">
-              <ExpandableCard idsToShow={[1]} /> {/* Head of ICT */}
+              <ExpandableCard idsToShow={[1]} /> {/* Head of ICT 
             </div>
 
-            {/* First Row: Head of ICT and Head of Section */}
+            {/* First Row: Head of ICT and Head of Section 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 w-1/2 max-w-xl">
-              <ExpandableCard idsToShow={[2]} /> {/* Head of ICT */}
-              <ExpandableCard idsToShow={[23]} /> {/* Head of Section */}
+              <ExpandableCard idsToShow={[2]} /> {/* Head of ICT 
+              <ExpandableCard idsToShow={[23]} /> {/* Head of Section 
             </div>
 
-            {/* Second Row: Senior Software Engineers */}
+            {/* Second Row: Senior Software Engineers 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[70%] max-w-3xl">
               <ExpandableCard idsToShow={[5]} />
               <ExpandableCard idsToShow={[13]} />
@@ -176,7 +179,7 @@ export default function TeamPage() {
               
             </div>
 
-            {/* Third Row: Systems Administrators */}
+            {/* Third Row: Systems Administrators 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[70%] max-w-3xl">
             <ExpandableCard idsToShow={[19]} />
               <ExpandableCard idsToShow={[24]} />
@@ -212,7 +215,7 @@ export default function TeamPage() {
 
           </section>
 
-        </TracingBeam>
+        </TracingBeam> */}
 
         {/* Footer */}
         <Footer className="relative z-10 w-full mt-20" />

@@ -345,14 +345,14 @@ import Hero from "@/components/Hero";
 // import RecentProjects from "@/components/RecentProjects";
 import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
-import Approach from "@/components/Approach";
+// import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
 // import { TeamPreview } from "@/components/TeamPreview";
 import BackToTopButton from "@/components/BackToTopButton";
 import TeamNew from '@/components/TeamNew';
 import { AnimatedCardDemo } from '@/components/AnimatedCardDemo';
 import StepCard from '@/components/StepCard';
-import StepCategories from '@/components/StepCategories';
+// import StepCategories from '@/components/StepCategories';
 // import { StickyScrollRevealDemo } from '@/components/StickyScrollRevealDemo';
 // import ProjectShowcase from '@/components/ProjectShowcase';
 
